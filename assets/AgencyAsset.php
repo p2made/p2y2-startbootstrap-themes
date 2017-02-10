@@ -11,13 +11,13 @@
 
 /**
  * Load this asset with...
- * p2made\theme\Agency\assets\AgencyAsset::register($this);
+ * p2made\SB\assets\AgencyAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\theme\Agency\assets\AgencyAsset',
+ *     'p2made\SB\assets\AgencyAsset',
  */
 
-namespace p2made\theme\Agency\assets;
+namespace p2made\SB\assets;
 
 class AgencyAsset extends \p2made\assets\base\P2AssetBundle
 {
@@ -36,7 +36,7 @@ class AgencyAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\theme\Agency\assets\AgencyFontsAsset',
+			'p2made\SB\assets\AgencyFontsAsset',
 		],
 
 	);

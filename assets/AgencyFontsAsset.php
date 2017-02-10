@@ -11,13 +11,13 @@
 
 /**
  * Load this asset with...
- * p2made\theme\Agency\assets\AgencyFontsAsset::register($this);
+ * p2made\SB\assets\AgencyFontsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\theme\Agency\assets\AgencyFontsAsset',
+ *     'p2made\SB\assets\AgencyFontsAsset',
  */
 
-namespace p2made\theme\Agency\assets;
+namespace p2made\SB\assets;
 
 class AgencyFontsAsset extends \p2made\assets\base\P2AssetBundle
 {

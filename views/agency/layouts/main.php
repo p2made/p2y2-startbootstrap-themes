@@ -18,7 +18,7 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
-p2made\theme\Agency\assets\AgencyAsset::register($this);
+p2made\SB\assets\AgencyAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

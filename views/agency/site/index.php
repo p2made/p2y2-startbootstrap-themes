@@ -13,7 +13,7 @@
 
 $this->title = 'P2Agency | Start Bootstrap Theme';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(
-	'@vendor/p2made/yii2-agency-theme/assets/lib'
+	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/agency'
 );
 ?>
 
