@@ -1,14 +1,3 @@
-<?php
-/**
- * _footer.php
- *
- * @copyright Copyright &copy; Pedro Plowman, 2017
- * @author Pedro Plowman
- * @link https://github.com/p2made
- * @package yii2-startbootstrap-themes
- * @license MIT
- */
-?>
 	<footer>
 		<div class="container">
 			<div class="row">

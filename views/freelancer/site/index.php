@@ -13,14 +13,11 @@
 
 $this->title = 'P2Agency | Start Bootstrap Theme';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(
-	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/agency'
+	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/freelancer'
 );
 ?>
 
-<?= $this->render('_header.php') ?>
-<?= $this->render('_services.php') ?>
+<?= $this->render('_header.php', ['assetDir' => $assetDir]) ?>
 <?= $this->render('_portfolio.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_about.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_team.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_clients.php', ['assetDir' => $assetDir]) ?>
+<?= $this->render('_about.php') ?>
 <?= $this->render('_contact.php') ?>
