@@ -12,7 +12,13 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\theme\Agency\assets\AgencyAsset::register($this);
+use yii\bootstrap\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\helpers\ArrayHelper;
+use p2made\helpers\FA;
+
+p2made\SB\assets\AgencyAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
