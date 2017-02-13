@@ -42,8 +42,8 @@ $menuItems = [
 		['label' => 'Full Width Page', 'url' =>['/site/page', 'view' => 'full-width']],
 		['label' => 'Sidebar Page', 'url' =>['/site/page', 'view' => 'sidebar']],
 		['label' => 'FAQ', 'url' =>['/site/page', 'view' => 'faq']],
-		['label' => '404', 'url' =>['/site/page', 'view' => '404']],
 		['label' => 'Pricing Table', 'url' =>['/site/page', 'view' => 'pricing']],
+		['label' => '404', 'url' =>['/site/page', 'view' => '404']],
 	]],
 ];
 if (Yii::$app->user->isGuest) {

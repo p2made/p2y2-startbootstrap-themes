@@ -1,6 +1,6 @@
 <?php
 /**
- * error.php
+ * 404.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -9,19 +9,18 @@
  * @license MIT
  */
 
+/* @var $this yii\web\View */
+
 use yii\bootstrap\Html;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use p2made\helpers\FA;
 
-/* @var $this yii\web\View */
-/* @var $name string */
-/* @var $message string */
-/* @var $exception Exception */
-
-$this->title = $name;
+$this->title = '404';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container site-error">
+
+<div class="container">
 
 	<!-- Page Heading/Breadcrumbs -->
 	<div class="row">
@@ -40,10 +39,9 @@ $this->title = $name;
 
 		<div class="col-lg-12">
 			<div class="jumbotron">
-				<div class="alert alert-danger">
-					<?= nl2br(Html::encode($message)) ?>
-				</div>
-				<p>Here are some helpful links to get you back on track:</p>
+				<h1><span class="error-404">404</span>
+				</h1>
+				<p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
 				<ul>
 					<li><?= Html::a('Home', Url::to(['/site/index', 'view' => 'forms'])) ?></li>
 					<li><?= Html::a('About', Url::to(['(.+)'])) ?></li>
@@ -80,7 +78,7 @@ $this->title = $name;
 
 	</div>
 
-	<?= $this->render('_footer.php') ?>
+	<?= $this->render('../_footer.php') ?>
 
 	<!-- Page Code Location - remove in production -->
 	<div class="row">
