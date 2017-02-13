@@ -15,130 +15,51 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
+NavBar::begin([
+	'brandLabel' => 'P2 Modern Business',
+	'brandUrl' => Yii::$app->homeUrl,
+	'options' => [
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
+	],
+]);
 $menuItems = [
-	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
-	['label' => 'Services', 'url' =>'#services', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Portfolio', 'url' =>'#portfolio', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'About', 'url' =>'#about', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Team', 'url' =>'#team', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'About', 'url' => ['/site/about']],
+	['label' => 'Services', 'url' =>['/site/page', 'view' => 'services']],
+	['label' => 'Contact', 'url' => ['/site/contact']],
+	['label' => 'Portfolio', 'url' =>'#', 'items' => [
+		['label' => '1 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-1-col']],
+		['label' => '2 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-2-col']],
+		['label' => '3 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-3-col']],
+		['label' => '4 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-4-col']],
+		['label' => 'Single Portfolio Item', 'url' =>['/site/page', 'view' => 'portfolio-item']],
+	]],
+	['label' => 'Blog', 'url' =>'#', 'items' => [
+		['label' => 'Blog Home 1', 'url' =>['/site/page', 'view' => 'blog-home-1']],
+		['label' => 'Blog Home 2', 'url' =>['/site/page', 'view' => 'blog-home-2']],
+		['label' => 'Blog Post', 'url' =>['/site/page', 'view' => 'blog-post']],
+	]],
+	['label' => 'Other Pages', 'url' =>'#', 'items' => [
+		['label' => 'Full Width Page', 'url' =>['/site/page', 'view' => 'full-width']],
+		['label' => 'Sidebar Page', 'url' =>['/site/page', 'view' => 'sidebar']],
+		['label' => 'FAQ', 'url' =>['/site/page', 'view' => 'faq']],
+		['label' => '404', 'url' =>['/site/page', 'view' => '404']],
+		['label' => 'Pricing Table', 'url' =>['/site/page', 'view' => 'pricing']],
+	]],
 ];
 if (Yii::$app->user->isGuest) {
-	$menuItems[] = ['label' => 'Users', 'linkOptions' => ['class' => 'page-scroll'], 'items' => [
+	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
 		['label' => 'Signup', 'url' => ['/site/signup']],
 		['label' => 'Login', 'url' => ['/site/login']],
 	]];
 } else {
-	$menuItems[] = '<li>'
-		. Html::beginForm(['/site/logout'], 'post')
-		. Html::submitButton(
-			'Logout (' . Yii::$app->user->identity->username . ')',
-			['class' => 'btn btn-link logout']
-		)
-		. Html::endForm()
-		. '</li>';
+	$menuItems[] = [
+		'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+		'url' => ['/site/logout'],
+		'linkOptions' => ['data-method' => 'post']
+	];
 }
-
-NavBar::begin([
-	'brandLabel' => 'P2Agency',
-	'brandUrl' => '#page-top',
-	'brandOptions'=>[
-		'class'=>'page-scroll'
-	],
-	'options' => [
-		'class' => 'navbar navbar-default navbar-custom navbar-fixed-top',
-	],
-]);
 echo Nav::widget([
 	'options' => ['class' => 'navbar-nav navbar-right'],
 	'items' => $menuItems,
 ]);
 NavBar::end();
-?>
-
-
-	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Start Bootstrap</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="services.html">Services</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="portfolio-1-col.html">1 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-2-col.html">2 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-3-col.html">3 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-4-col.html">4 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-item.html">Single Portfolio Item</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="blog-home-1.html">Blog Home 1</a>
-							</li>
-							<li>
-								<a href="blog-home-2.html">Blog Home 2</a>
-							</li>
-							<li>
-								<a href="blog-post.html">Blog Post</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="full-width.html">Full Width Page</a>
-							</li>
-							<li>
-								<a href="sidebar.html">Sidebar Page</a>
-							</li>
-							<li>
-								<a href="faq.html">FAQ</a>
-							</li>
-							<li>
-								<a href="404.html">404</a>
-							</li>
-							<li>
-								<a href="pricing.html">Pricing Table</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container -->
-	</nav>
