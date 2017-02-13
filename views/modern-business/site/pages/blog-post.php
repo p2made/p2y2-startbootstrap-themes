@@ -1,299 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+<?php
+/**
+ * blog-post.php
+ *
+ * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @author Pedro Plowman
+ * @link https://github.com/p2made
+ * @package yii2-startbootstrap-themes
+ * @license MIT
+ */
 
-	<title>Modern Business - Start Bootstrap Template</title>
+/* @var $this yii\web\View */
 
-	<!-- Bootstrap Core CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+use yii\bootstrap\Html;
+use yii\widgets\Breadcrumbs;
+use p2made\helpers\FA;
 
-	<!-- Custom CSS -->
-	<link href="../assets/css/modern-business.css" rel="stylesheet">
+$this->title = 'Blog Post';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 
-	<!-- Custom Fonts -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<div class="container">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Start Bootstrap</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="services.html">Services</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="portfolio-1-col.html">1 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-2-col.html">2 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-3-col.html">3 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-4-col.html">4 Column Portfolio</a>
-							</li>
-							<li>
-								<a href="portfolio-item.html">Single Portfolio Item</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="blog-home-1.html">Blog Home 1</a>
-							</li>
-							<li>
-								<a href="blog-home-2.html">Blog Home 2</a>
-							</li>
-							<li class="active">
-								<a href="blog-post.html">Blog Post</a>
-							</li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="full-width.html">Full Width Page</a>
-							</li>
-							<li>
-								<a href="sidebar.html">Sidebar Page</a>
-							</li>
-							<li>
-								<a href="faq.html">FAQ</a>
-							</li>
-							<li>
-								<a href="404.html">404</a>
-							</li>
-							<li>
-								<a href="pricing.html">Pricing Table</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
+	<!-- Page Heading/Breadcrumbs -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"><?= Html::encode($this->title) ?>
+				<small>Subheading</small>
+			</h1>
+<?= Breadcrumbs::widget([
+	'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+]) ?>
 		</div>
-		<!-- /.container -->
-	</nav>
+	</div>
+	<!-- /.row -->
 
-	<!-- Page Content -->
-	<div class="container">
+	<!-- Content Row -->
+	<div class="row">
 
-		<!-- Page Heading/Breadcrumbs -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Blog Post
-					<small>by <a href="#">Start Bootstrap</a>
-					</small>
-				</h1>
-				<ol class="breadcrumb">
-					<li><a href="index.html">Home</a>
-					</li>
-					<li class="active">Blog Post</li>
-				</ol>
-			</div>
-		</div>
-		<!-- /.row -->
+		<!-- Blog Post Content Column -->
+		<div class="col-lg-8">
 
-		<!-- Content Row -->
-		<div class="row">
+			<!-- Blog Post -->
 
-			<!-- Blog Post Content Column -->
-			<div class="col-lg-8">
+			<hr>
 
-				<!-- Blog Post -->
+			<!-- Date/Time -->
+			<p><i class="fa fa-clock-o"></i> Posted on August 24, 2013 at 9:00 PM</p>
 
-				<hr>
+			<hr>
 
-				<!-- Date/Time -->
-				<p><i class="fa fa-clock-o"></i> Posted on August 24, 2013 at 9:00 PM</p>
+			<!-- Preview Image -->
+			<img class="img-responsive" src="http://placehold.it/900x300" alt="">
 
-				<hr>
+			<hr>
 
-				<!-- Preview Image -->
-				<img class="img-responsive" src="http://placehold.it/900x300" alt="">
+			<!-- Post Content -->
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
 
-				<hr>
+			<hr>
 
-				<!-- Post Content -->
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+			<!-- Blog Comments -->
 
-				<hr>
-
-				<!-- Blog Comments -->
-
-				<!-- Comments Form -->
-				<div class="well">
-					<h4>Leave a Comment:</h4>
-					<form role="form">
-						<div class="form-group">
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
-				</div>
-
-				<hr>
-
-				<!-- Posted Comments -->
-
-				<!-- Comment -->
-				<div class="media">
-					<a class="pull-left" href="#">
-						<img class="media-object" src="http://placehold.it/64x64" alt="">
-					</a>
-					<div class="media-body">
-						<h4 class="media-heading">Start Bootstrap
-							<small>August 25, 2014 at 9:30 PM</small>
-						</h4>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			<!-- Comments Form -->
+			<div class="well">
+				<h4>Leave a Comment:</h4>
+				<form role="form">
+					<div class="form-group">
+						<textarea class="form-control" rows="3"></textarea>
 					</div>
-				</div>
-
-				<!-- Comment -->
-				<div class="media">
-					<a class="pull-left" href="#">
-						<img class="media-object" src="http://placehold.it/64x64" alt="">
-					</a>
-					<div class="media-body">
-						<h4 class="media-heading">Start Bootstrap
-							<small>August 25, 2014 at 9:30 PM</small>
-						</h4>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-						<!-- Nested Comment -->
-						<div class="media">
-							<a class="pull-left" href="#">
-								<img class="media-object" src="http://placehold.it/64x64" alt="">
-							</a>
-							<div class="media-body">
-								<h4 class="media-heading">Nested Start Bootstrap
-									<small>August 25, 2014 at 9:30 PM</small>
-								</h4>
-								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-							</div>
-						</div>
-						<!-- End Nested Comment -->
-					</div>
-				</div>
-
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 			</div>
 
-			<!-- Blog Sidebar Widgets Column -->
-			<div class="col-md-4">
+			<hr>
 
-				<!-- Blog Search Well -->
-				<div class="well">
-					<h4>Blog Search</h4>
-					<div class="input-group">
-						<input type="text" class="form-control">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-						</span>
-					</div>
-					<!-- /.input-group -->
+			<!-- Posted Comments -->
+
+			<!-- Comment -->
+			<div class="media">
+				<a class="pull-left" href="#">
+					<img class="media-object" src="http://placehold.it/64x64" alt="">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Start Bootstrap
+						<small>August 25, 2014 at 9:30 PM</small>
+					</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 				</div>
+			</div>
 
-				<!-- Blog Categories Well -->
-				<div class="well">
-					<h4>Blog Categories</h4>
-					<div class="row">
-						<div class="col-lg-6">
-							<ul class="list-unstyled">
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-6">
-							<ul class="list-unstyled">
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-								<li><a href="#">Category Name</a>
-								</li>
-							</ul>
+			<!-- Comment -->
+			<div class="media">
+				<a class="pull-left" href="#">
+					<img class="media-object" src="http://placehold.it/64x64" alt="">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Start Bootstrap
+						<small>August 25, 2014 at 9:30 PM</small>
+					</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					<!-- Nested Comment -->
+					<div class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="http://placehold.it/64x64" alt="">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Nested Start Bootstrap
+								<small>August 25, 2014 at 9:30 PM</small>
+							</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 						</div>
 					</div>
-					<!-- /.row -->
+					<!-- End Nested Comment -->
 				</div>
-
-				<!-- Side Widget Well -->
-				<div class="well">
-					<h4>Side Widget Well</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-				</div>
-
 			</div>
 
 		</div>
-		<!-- /.row -->
 
-		<hr>
+		<!-- Blog Sidebar Widgets Column -->
+		<div class="col-md-4">
 
-		<!-- Footer -->
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Copyright &copy; Your Website 2014</p>
+			<!-- Blog Search Well -->
+			<div class="well">
+				<h4>Blog Search</h4>
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+					</span>
 				</div>
+				<!-- /.input-group -->
 			</div>
-		</footer>
+
+			<!-- Blog Categories Well -->
+			<div class="well">
+				<h4>Blog Categories</h4>
+				<div class="row">
+					<div class="col-lg-6">
+						<ul class="list-unstyled">
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="list-unstyled">
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+							<li><a href="#">Category Name</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+
+			<!-- Side Widget Well -->
+			<div class="well">
+				<h4>Side Widget Well</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+			</div>
+
+		</div>
 
 	</div>
-	<!-- /.container -->
+	<!-- /.row -->
 
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<?= $this->render('../_footer.php') ?>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
-</html>
+	<!-- Page Code Location - remove in production -->
+	<div class="row">
+		<div class="col-lg-12">
+			<code><?= __FILE__ ?></code>
+		</div>
+	</div>
+
+</div>
