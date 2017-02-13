@@ -16,19 +16,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "^0.1"
+composer require --prefer-dist p2made/yii2-startbootstrap-themes "^0.2"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^0.1"
+php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^0.2"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-startbootstrap-themes": "^0.1"
+"p2made/yii2-startbootstrap-themes": "^0.2"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.
@@ -38,7 +38,7 @@ The files are installed via Yii's recommended usage of the `fxp/composer-asset-p
 Quick Start
 -----------
 
-Once the extension is installed, you can have a *preview* by reconfiguring the path mappings of the view component:
+Once the extension is installed, you can have a *preview* by reconfiguring the path mappings of the view component with *one* of `@app/views` lines:
 
 ```php
 	'components' => [
@@ -46,6 +46,9 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 			'theme' => [
 				'pathMap' => [
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/agency',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-casual',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
 				],
 			],
 		],
@@ -100,7 +103,7 @@ P2 Start Bootstrap Themes uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-
 Customization
 -------------
 
-- Copy files from `vendor/p2made/yii2-startbootstrap-themes/views-preview/sb-admin-2` (or other theme) to `@app/views`.
+- Copy files from `vendor/p2made/yii2-startbootstrap-themes/views-preview/_your_chouce_of_theme_` to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
-- Edit your views adhering to html markup `http://shapebootstrap.net/item/triangle-free-responsive-multipurpose-template/` & the example views.
+- Edit your views adhering to the example views.
 
