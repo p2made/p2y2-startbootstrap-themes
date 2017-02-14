@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v0.3.0
+P2 Start Bootstrap Themes v0.4.0-dev
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
@@ -48,7 +48,9 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/agency',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-casual',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/landing-page',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/one-page-wonder',
 				],
 			],
 		],
@@ -103,7 +105,7 @@ P2 Start Bootstrap Themes uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-
 Customization
 -------------
 
-- Copy files from `vendor/p2made/yii2-startbootstrap-themes/views-preview/_your_chouce_of_theme_` to `@app/views`.
+- Copy files from `vendor/p2made/yii2-startbootstrap-themes/views-preview/_your_choice_of_theme_` to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to the example views.
 
