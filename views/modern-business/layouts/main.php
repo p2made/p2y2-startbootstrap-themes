@@ -13,11 +13,11 @@
 /* @var $content string */
 
 $layout = 'primary';
+$actionId = Yii::$app->controller->action->id;
+$entryIds  = [NULL, 'login', 'signup', 'request-password-reset'];
+$foundId = array_search($actionId, $entryIds);
 
-if (Yii::$app->controller->action->id === 'login') {
-	$layout = 'user-entry';
-}
-if (Yii::$app->controller->action->id === 'signup') {
+if (false !== $foundId) {
 	$layout = 'user-entry';
 }
 
