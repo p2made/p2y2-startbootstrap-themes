@@ -1,6 +1,6 @@
 <?php
 /**
- * homepage.php
+ * main.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -13,10 +13,6 @@
 /* @var $content string */
 
 use yii\bootstrap\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
 
 p2made\SB\assets\AgencyAsset::register($this);
 ?>
