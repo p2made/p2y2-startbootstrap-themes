@@ -17,21 +17,16 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Request password reset';
-
-$fieldOptions1 = [
-	'options' => ['class' => 'form-group has-feedback', 'autofocus' => 'autofocus'],
-	'inputTemplate' => "{input}<i class='glyphicon glyphicon-envelope form-control-feedback'></i>",
-];
-
-$fieldOptions2 = [
-	'options' => ['class' => 'form-group has-feedback'],
-	'inputTemplate' => "{input}<i class='glyphicon glyphicon-lock form-control-feedback'></i>",
-];
 ?>
 
 <div class="container">
 
-	<hr class="featurette-divider">
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
+	</div>
 
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3">
@@ -54,13 +49,17 @@ $fieldOptions2 = [
 		</div>
 	</div>
 
-	<?= $this->render('_footer.php') ?>
-
-	<!-- Page Code Location - remove in production -->
-	<div class="row">
-		<div class="col-lg-12">
-			<code><?= __FILE__ ?></code>
-		</div>
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
 	</div>
 
+</div>
+
+<?= $this->render('_footer.php') ?>
+
+<!-- Page Code Location - remove in production -->
+<div class="row">
+	<div class="col-lg-12">
+		<code><?= __FILE__ ?></code>
+	</div>
 </div>

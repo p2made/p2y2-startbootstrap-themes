@@ -17,29 +17,20 @@ use p2made\helpers\FA;
 use p2made\helpers\BSocial;
 
 $this->title = 'Signup';
-
-$fieldOptions1 = [
-	'options' => ['class' => 'form-group has-feedback', 'autofocus' => 'autofocus'],
-	'inputTemplate' => "{input}<i class='glyphicon glyphicon-user form-control-feedback'></i>",
-];
-
-$fieldOptions2 = [
-	'options' => ['class' => 'form-group has-feedback'],
-	'inputTemplate' => "{input}<i class='glyphicon glyphicon-envelope form-control-feedback'></i>",
-];
-
-$fieldOptions3 = [
-	'options' => ['class' => 'form-group has-feedback'],
-	'inputTemplate' => "{input}<i class='glyphicon glyphicon-lock form-control-feedback'></i>",
-];
 ?>
 
 <div class="container">
 
-	<hr class="featurette-divider">
-
 	<!-- Signup row -->
 	<div class="row">
+
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
+	</div>
+
 		<div class="col-lg-6 col-lg-offset-3">
 			<div class="panel panel-info">
 				<div class="panel-heading">
@@ -78,13 +69,17 @@ $fieldOptions3 = [
 		</div>
 	</div>
 
-	<?= $this->render('_footer.php') ?>
-
-	<!-- Page Code Location - remove in production -->
-	<div class="row">
-		<div class="col-lg-12">
-			<code><?= __FILE__ ?></code>
-		</div>
+	<div class="row clearfix">
+		<div class="col-lg-12"><br><br></div>
 	</div>
 
+</div>
+
+<?= $this->render('_footer.php') ?>
+
+<!-- Page Code Location - remove in production -->
+<div class="row">
+	<div class="col-lg-12">
+		<code><?= __FILE__ ?></code>
+	</div>
 </div>

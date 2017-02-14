@@ -30,8 +30,8 @@ $menuItems = [
 ];
 if (Yii::$app->user->isGuest) {
 	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
-		['label' => 'Signup', 'url' => ['/site/signup']],
 		['label' => 'Login', 'url' => ['/site/login']],
+		['label' => 'Signup', 'url' => ['/site/signup']],
 	]];
 } else {
 	$menuItems[] = [

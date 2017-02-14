@@ -23,8 +23,8 @@ class LandingPageFontsAsset extends \p2made\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
-		'published' => [
-			'baseUrl' => '//fonts.googleapis.com',	insteadt of sourcePath for google fonts assets
+		'static' => [
+			'baseUrl' => '//fonts.googleapis.com',
 			'css' => [
 				'css?family=Lato:300,400,700,300italic,400italic,700italic',
 			],
