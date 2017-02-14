@@ -15,40 +15,49 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
+NavBar::begin([
+	'brandLabel' => 'P2 Modern Business',
+	'brandUrl' => Yii::$app->homeUrl,
+	'options' => [
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
+	],
+]);
 $menuItems = [
-	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
-	['label' => 'Services', 'url' =>'#services', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Portfolio', 'url' =>'#portfolio', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'About', 'url' =>'#about', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Team', 'url' =>'#team', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'About', 'url' => ['/site/about']],
+	['label' => 'Services', 'url' =>['/site/page', 'view' => 'services']],
+	['label' => 'Contact', 'url' => ['/site/contact']],
+	['label' => 'Portfolio', 'url' =>'#', 'items' => [
+		['label' => '1 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-1-col']],
+		['label' => '2 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-2-col']],
+		['label' => '3 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-3-col']],
+		['label' => '4 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-4-col']],
+		['label' => 'Single Portfolio Item', 'url' =>['/site/page', 'view' => 'portfolio-item']],
+	]],
+	['label' => 'Blog', 'url' =>'#', 'items' => [
+		['label' => 'Blog Home 1', 'url' =>['/site/page', 'view' => 'blog-home-1']],
+		['label' => 'Blog Home 2', 'url' =>['/site/page', 'view' => 'blog-home-2']],
+		['label' => 'Blog Post', 'url' =>['/site/page', 'view' => 'blog-post']],
+	]],
+	['label' => 'Other Pages', 'url' =>'#', 'items' => [
+		['label' => 'Full Width Page', 'url' =>['/site/page', 'view' => 'full-width']],
+		['label' => 'Sidebar Page', 'url' =>['/site/page', 'view' => 'sidebar']],
+		['label' => 'FAQ', 'url' =>['/site/page', 'view' => 'faq']],
+		['label' => 'Pricing Table', 'url' =>['/site/page', 'view' => 'pricing']],
+		['label' => '404', 'url' =>['/site/page', 'view' => '404']],
+	]],
 ];
 if (Yii::$app->user->isGuest) {
-	$menuItems[] = ['label' => 'Users', 'linkOptions' => ['class' => 'page-scroll'], 'items' => [
+	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
 		['label' => 'Signup', 'url' => ['/site/signup']],
 		['label' => 'Login', 'url' => ['/site/login']],
 	]];
 } else {
-	$menuItems[] = '<li>'
-		. Html::beginForm(['/site/logout'], 'post')
-		. Html::submitButton(
-			'Logout (' . Yii::$app->user->identity->username . ')',
-			['class' => 'btn btn-link logout']
-		)
-		. Html::endForm()
-		. '</li>';
+	$menuItems[] = [
+		'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+		'url' => ['/site/logout'],
+		'linkOptions' => ['data-method' => 'post']
+	];
 }
-
-NavBar::begin([
-	'brandLabel' => 'P2Agency',
-	'brandUrl' => '#page-top',
-	'brandOptions'=>[
-		'class'=>'page-scroll'
-	],
-	'options' => [
-		'class' => 'navbar navbar-default navbar-custom navbar-fixed-top',
-	],
-]);
 echo Nav::widget([
 	'options' => ['class' => 'navbar-nav navbar-right'],
 	'items' => $menuItems,
