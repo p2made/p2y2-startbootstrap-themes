@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<hr>
 
 			<!-- Preview Image -->
-			<img class="img-responsive" src="http://placehold.it/900x300" alt="">
+			<img src="http://placehold.it/900x300" alt="" class="img-responsive">
 
 			<hr>
 
@@ -83,7 +83,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<!-- Comment -->
 			<div class="media">
 				<a class="pull-left" href="#">
-					<img class="media-object" src="http://placehold.it/64x64" alt="">
+					<img src="http://placehold.it/64x64" alt="" class="media-object">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading">Start Bootstrap
@@ -96,7 +96,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			<!-- Comment -->
 			<div class="media">
 				<a class="pull-left" href="#">
-					<img class="media-object" src="http://placehold.it/64x64" alt="">
+					<img src="http://placehold.it/64x64" alt="" class="media-object">
 				</a>
 				<div class="media-body">
 					<h4 class="media-heading">Start Bootstrap
@@ -106,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
 					<!-- Nested Comment -->
 					<div class="media">
 						<a class="pull-left" href="#">
-							<img class="media-object" src="http://placehold.it/64x64" alt="">
+							<img src="http://placehold.it/64x64" alt="" class="media-object">
 						</a>
 						<div class="media-body">
 							<h4 class="media-heading">Nested Start Bootstrap

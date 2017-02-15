@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-5">
 			<a href="blog-post.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+				<img src="http://placehold.it/600x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-6">
@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-5">
 			<a href="blog-post.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+				<img src="http://placehold.it/600x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-6">
@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-5">
 			<a href="blog-post.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+				<img src="http://placehold.it/600x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-6">

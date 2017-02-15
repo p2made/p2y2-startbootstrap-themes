@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project One</a>
@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project Two</a>
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project Three</a>
@@ -70,7 +70,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project Four</a>
@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project Five</a>
@@ -93,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 		<div class="col-md-6 img-portfolio">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+				<img src="http://placehold.it/700x400" alt="" class="img-responsive img-hover">
 			</a>
 			<h3>
 				<a href="portfolio-item.html">Project Six</a>

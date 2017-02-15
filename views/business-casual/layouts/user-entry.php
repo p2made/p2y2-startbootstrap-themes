@@ -16,27 +16,30 @@ use yii\bootstrap\NavBar;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\SB\assets\ModernBusinessAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
+
+<?= $this->render('_header.php') ?>
 
 <?php
 NavBar::begin([
 	'brandLabel' => 'P2 Modern Business',
 	'brandUrl' => Yii::$app->homeUrl,
 	'options' => [
-		'class' => 'navbar navbar-inverse navbar-fixed-top',
+		'class' => 'navbar navbar-default',
 	],
 ]);
 
-$menuItems = [];
+$menuItems = [
+	['label' => 'Home', 'url' => ['/site/index']],
+];
 if (Yii::$app->controller->action->id === 'signup') {
 	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
 } else {
@@ -44,13 +47,15 @@ if (Yii::$app->controller->action->id === 'signup') {
 }
 
 echo Nav::widget([
-	'options' => ['class' => 'navbar-nav navbar-right'],
+	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,
 ]);
 NavBar::end();
 ?>
 
 <?= $content ?>
+
+<?= $this->render('_footer.php') ?>
 
 <?php $this->endBody() ?>
 </body>

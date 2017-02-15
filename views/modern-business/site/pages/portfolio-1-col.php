@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-7">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+				<img src="http://placehold.it/700x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-5">
@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-7">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+				<img src="http://placehold.it/700x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-5">
@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-7">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+				<img src="http://placehold.it/700x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-5">
@@ -93,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		<div class="col-md-7">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+				<img src="http://placehold.it/700x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-5">
@@ -111,7 +111,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="row">
 		<div class="col-md-7">
 			<a href="#">
-				<img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+				<img src="http://placehold.it/700x300" alt="" class="img-responsive img-hover">
 			</a>
 		</div>
 		<div class="col-md-5">

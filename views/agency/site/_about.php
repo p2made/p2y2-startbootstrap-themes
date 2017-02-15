@@ -23,7 +23,7 @@
 					<ul class="timeline">
 						<li>
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="<?= $assetDir ?>/img/about/1.jpg" alt="">
+								<img src="<?= $assetDir ?>/img/about/1.jpg" alt="" class="img-circle img-responsive">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -37,7 +37,7 @@
 						</li>
 						<li class="timeline-inverted">
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="<?= $assetDir ?>/img/about/2.jpg" alt="">
+								<img src="<?= $assetDir ?>/img/about/2.jpg" alt="" class="img-circle img-responsive">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -51,7 +51,7 @@
 						</li>
 						<li>
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="<?= $assetDir ?>/img/about/3.jpg" alt="">
+								<img src="<?= $assetDir ?>/img/about/3.jpg" alt="" class="img-circle img-responsive">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -65,7 +65,7 @@
 						</li>
 						<li class="timeline-inverted">
 							<div class="timeline-image">
-								<img class="img-circle img-responsive" src="<?= $assetDir ?>/img/about/4.jpg" alt="">
+								<img src="<?= $assetDir ?>/img/about/4.jpg" alt="" class="img-circle img-responsive">
 							</div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">

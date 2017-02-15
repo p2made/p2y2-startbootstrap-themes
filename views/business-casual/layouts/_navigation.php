@@ -16,40 +16,22 @@ use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
 NavBar::begin([
-	'brandLabel' => 'P2 Modern Business',
+	'brandLabel' => 'P2 Business Casual',
 	'brandUrl' => Yii::$app->homeUrl,
 	'options' => [
-		'class' => 'navbar navbar-inverse navbar-fixed-top',
+		'class' => 'navbar navbar-default',
 	],
 ]);
 $menuItems = [
+	['label' => 'Home', 'url' => ['/site/index']],
 	['label' => 'About', 'url' => ['/site/about']],
-	['label' => 'Services', 'url' =>['/site/page', 'view' => 'services']],
 	['label' => 'Contact', 'url' => ['/site/contact']],
-	['label' => 'Portfolio', 'url' =>'#', 'items' => [
-		['label' => '1 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-1-col']],
-		['label' => '2 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-2-col']],
-		['label' => '3 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-3-col']],
-		['label' => '4 Column Portfolio', 'url' =>['/site/page', 'view' => 'portfolio-4-col']],
-		['label' => 'Single Portfolio Item', 'url' =>['/site/page', 'view' => 'portfolio-item']],
-	]],
-	['label' => 'Blog', 'url' =>'#', 'items' => [
-		['label' => 'Blog Home 1', 'url' =>['/site/page', 'view' => 'blog-home-1']],
-		['label' => 'Blog Home 2', 'url' =>['/site/page', 'view' => 'blog-home-2']],
-		['label' => 'Blog Post', 'url' =>['/site/page', 'view' => 'blog-post']],
-	]],
-	['label' => 'Other Pages', 'url' =>'#', 'items' => [
-		['label' => 'Full Width Page', 'url' =>['/site/page', 'view' => 'full-width']],
-		['label' => 'Sidebar Page', 'url' =>['/site/page', 'view' => 'sidebar']],
-		['label' => 'FAQ', 'url' =>['/site/page', 'view' => 'faq']],
-		['label' => 'Pricing Table', 'url' =>['/site/page', 'view' => 'pricing']],
-		['label' => '404', 'url' =>['/site/page', 'view' => '404']],
-	]],
+	['label' => 'Blog', 'url' =>['/site/page', 'view' => 'blog']],
 ];
 if (Yii::$app->user->isGuest) {
 	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
-		['label' => 'Signup', 'url' => ['/site/signup']],
 		['label' => 'Login', 'url' => ['/site/login']],
+		['label' => 'Signup', 'url' => ['/site/signup']],
 	]];
 } else {
 	$menuItems[] = [
@@ -59,7 +41,7 @@ if (Yii::$app->user->isGuest) {
 	];
 }
 echo Nav::widget([
-	'options' => ['class' => 'navbar-nav navbar-right'],
+	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,
 ]);
 NavBar::end();

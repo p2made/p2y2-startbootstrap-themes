@@ -49,13 +49,13 @@ $this->params['breadcrumbs'][] = $this->title;
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img class="img-responsive" src="http://placehold.it/750x500" alt="">
+						<img src="http://placehold.it/750x500" alt="" class="img-responsive">
 					</div>
 					<div class="item">
-						<img class="img-responsive" src="http://placehold.it/750x500" alt="">
+						<img src="http://placehold.it/750x500" alt="" class="img-responsive">
 					</div>
 					<div class="item">
-						<img class="img-responsive" src="http://placehold.it/750x500" alt="">
+						<img src="http://placehold.it/750x500" alt="" class="img-responsive">
 					</div>
 				</div>
 
@@ -93,25 +93,25 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		<div class="col-sm-3 col-xs-6">
 			<a href="#">
-				<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+				<img src="http://placehold.it/500x300" alt="" class="img-responsive img-hover img-related">
 			</a>
 		</div>
 
 		<div class="col-sm-3 col-xs-6">
 			<a href="#">
-				<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+				<img src="http://placehold.it/500x300" alt="" class="img-responsive img-hover img-related">
 			</a>
 		</div>
 
 		<div class="col-sm-3 col-xs-6">
 			<a href="#">
-				<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+				<img src="http://placehold.it/500x300" alt="" class="img-responsive img-hover img-related">
 			</a>
 		</div>
 
 		<div class="col-sm-3 col-xs-6">
 			<a href="#">
-				<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+				<img src="http://placehold.it/500x300" alt="" class="img-responsive img-hover img-related">
 			</a>
 		</div>
 

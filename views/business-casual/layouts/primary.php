@@ -14,22 +14,24 @@
 
 use yii\bootstrap\Html;
 use common\widgets\Alert;
-
-p2made\SB\assets\ModernBusinessAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
 <?= Alert::widget() ?>
 
+<?= $this->render('_header.php') ?>
+
 <?= $this->render('_navigation.php') ?>
 
 <?= $content ?>
+
+<?= $this->render('_footer.php') ?>
 
 <?php $this->endBody() ?>
 
@@ -44,3 +46,9 @@ $(document).ready(function(){
 </body>
 </html>
 <?php $this->endPage() ?>
+
+
+Yii::app()->params['abc'] = 123;
+get variable:
+
+echo Yii::app()->params['abc'];

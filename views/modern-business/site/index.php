@@ -110,32 +110,32 @@ $this->title = 'Home';
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<a href="portfolio-item.html">
-				<img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+				<img src="http://placehold.it/700x450" alt="" class="img-responsive img-portfolio img-hover">
 			</a>
 		</div>
 	</div>
@@ -162,7 +162,7 @@ $this->title = 'Home';
 			</a> of Queensland Australia.</p>
 		</div>
 		<div class="col-md-6">
-			<img class="img-responsive" src="http://placehold.it/700x450" alt="">
+			<img src="http://placehold.it/700x450" alt="" class="img-responsive">
 		</div>
 	</div>
 	<!-- /.row -->

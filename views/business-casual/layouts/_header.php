@@ -14,14 +14,5 @@ use yii\bootstrap\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 ?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-	<meta charset="<?= Yii::$app->charset ?>"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
-</head>
+<div class="brand">P2 Business Casual</div>
+<div class="address-bar">Currie Street | Nambour, Qld 4560, AU | +61.7.4567.4321</div>

@@ -12,17 +12,13 @@
 use p2made\helpers\FA;
 ?>
 
-<hr>
-
 <footer>
-	<div class="row">
-		<div class="col-lg-12">
-			<p class="pull-left">
-				Copyright <?= FA::i('copyright') ?> Your Website <?= date("Y") ?>
-			</p>
-			<p class="pull-right">
-				<?= Yii::powered() ?>
-			</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<p>Copyright <?= FA::i('copyright') ?> Your Website <?= date("Y") ?>
+				<br><?= Yii::powered() ?></p>
+			</div>
 		</div>
 	</div>
 </footer>
