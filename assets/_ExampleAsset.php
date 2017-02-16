@@ -46,7 +46,8 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2made\assets\P2CoreAsset', // __OR__
+			'p2made\SB\assets\_ExampleFontsAsset',
 		],
 
 	);
