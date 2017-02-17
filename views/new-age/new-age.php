@@ -46,15 +46,9 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a class="page-scroll" href="#download">Download</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#features">Features</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#contact">Contact</a>
-					</li>
+					<li><a class="page-scroll" href="#download">Download</a></li>
+					<li><a class="page-scroll" href="#features">Features</a></li>
+					<li><a class="page-scroll" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->

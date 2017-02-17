@@ -35,7 +35,6 @@ class BusinessCasualFontsAsset extends \p2made\assets\base\P2AssetBundle
 		'depends' => [
 			'p2made\assets\P2CoreAsset',
 		],
-
 	);
 
 	public function init()

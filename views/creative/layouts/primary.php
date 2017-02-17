@@ -21,28 +21,15 @@ use common\widgets\Alert;
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body>
+<body id="page-top">
 <?php $this->beginBody() ?>
 <?= Alert::widget() ?>
-
-<?= $this->render('_header.php') ?>
 
 <?= $this->render('_navigation.php') ?>
 
 <?= $content ?>
 
-<?= $this->render('_footer.php') ?>
-
 <?php $this->endBody() ?>
-
-<!-- Script to Activate the Carousel -->
-<script>
-$(document).ready(function(){
-	$('.carousel').carousel({
-		interval: 5000 //changes the speed
-	})
-});
-</script>
 </body>
 </html>
 <?php $this->endPage() ?>

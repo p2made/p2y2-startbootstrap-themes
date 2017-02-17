@@ -24,32 +24,17 @@ class NewAgeAsset extends \p2made\assets\base\P2AssetBundle
 	private $resourceData = array(
 
 		'published' => [
-			'sourcePath' => '@vendor/p2made/yii2-startbootstrap-themes/assets/lib/__THEME_NAME__',
-			//'baseUrl' => '//fonts.googleapis.com',	insteadt of sourcePath for google fonts assets
+			'sourcePath' => '@vendor/p2made/yii2-startbootstrap-themes/assets/lib/new-age',
 			'css' => [
-				'css/__THEME_NAME__.min.css',
+				'css/new-age.min.css',
 			],
-			'js' => [
-				'js/jqBootstrapValidation.min.js', // not always used
-				'js/contact.min.js', // not always used
-				'js/__THEME_NAME__.min.js',
-			],
-		],
-
-		'cssOptions' => [
-			// cssOptions like any other assets
-			// or leave out if no cssOptions
-		],
-		'jsOptions' => [
-			// jsOptions like any other assets
-			// or leave out if no jsOptions
+			'js' => [],
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset', // __OR__
-			'p2made\SB\assets\_ExampleFontsAsset',
+			'p2made\assets\JqueryEasingAsset',
+			'p2made\assets\SimpleLineIconsAsset',
 		],
-
 	);
 
 	public function init()

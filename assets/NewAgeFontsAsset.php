@@ -26,7 +26,9 @@ class NewAgeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//fonts.googleapis.com',
 			'css' => [
-				'__font__',
+				'css?family=Lato',
+				'css?family=Catamaran:100,200,300,400,500,600,700,800,900',
+				'css?family=Muli',
 			],
 			'js' => [],
 		],
@@ -34,7 +36,6 @@ class NewAgeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		'depends' => [
 			'p2made\assets\P2CoreAsset',
 		],
-
 	);
 
 	public function init()

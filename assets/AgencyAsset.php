@@ -38,7 +38,6 @@ class AgencyAsset extends \p2made\assets\base\P2AssetBundle
 		'depends' => [
 			'p2made\SB\assets\AgencyFontsAsset',
 		],
-
 	);
 
 	public function init()

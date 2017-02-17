@@ -49,7 +49,6 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 			'p2made\assets\P2CoreAsset', // __OR__
 			'p2made\SB\assets\_ExampleFontsAsset',
 		],
-
 	);
 
 	public function init()

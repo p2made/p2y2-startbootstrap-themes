@@ -1,4 +1,13 @@
 <?php
+/**
+ * requestPasswordResetToken.php
+ *
+ * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @author Pedro Plowman
+ * @link https://github.com/p2made
+ * @package yii2-startbootstrap-themes
+ * @license MIT
+ */
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -8,24 +17,39 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Request password reset';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-request-password-reset">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out your email. A link to reset password will be sent there.</p>
+<div class="container">
 
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
+	<div class="row">
+		<div class="box">
+			<div class="col-lg-12">
+				<hr>
+				<h2 class="intro-text text-center">
+					<?= Html::encode($this->title) ?>
+				</h2>
+				<hr>
+			</div>
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						Please fill out your email. A link to reset password will be sent there.
+					</div>
+					<div class="panel-body">
+						<?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
 
-                <?= $form->field($model, 'email')->textInput(['autofocus' => true]) ?>
+						<?= $form->field($model, 'email')->textInput(['autofocus' => true]) ?>
 
-                <div class="form-group">
-                    <?= Html::submitButton('Send', ['class' => 'btn btn-primary']) ?>
-                </div>
+						<div class="form-group">
+							<?= Html::submitButton('Send', ['class' => 'btn btn-primary']) ?>
+						</div>
 
-            <?php ActiveForm::end(); ?>
-        </div>
-    </div>
+						<?php ActiveForm::end(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
+<!-- /.container -->

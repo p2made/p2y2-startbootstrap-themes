@@ -38,7 +38,6 @@ class FreelancerAsset extends \p2made\assets\base\P2AssetBundle
 		'depends' => [
 			'p2made\SB\assets\FreelancerFontsAsset',
 		],
-
 	);
 
 	public function init()

@@ -26,7 +26,8 @@ class CreativeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		'static' => [
 			'baseUrl' => '//fonts.googleapis.com',
 			'css' => [
-				'__font__',
+				'css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800',
+				'css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic',
 			],
 			'js' => [],
 		],
@@ -34,7 +35,6 @@ class CreativeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		'depends' => [
 			'p2made\assets\P2CoreAsset',
 		],
-
 	);
 
 	public function init()
@@ -43,3 +43,5 @@ class CreativeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		parent::init();
 	}
 }
+
+
