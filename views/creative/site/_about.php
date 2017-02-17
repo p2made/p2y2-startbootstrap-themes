@@ -1,6 +1,6 @@
 <?php
 /**
- * about.php
+ * _about.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman

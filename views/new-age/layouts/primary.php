@@ -25,13 +25,9 @@ use common\widgets\Alert;
 <?php $this->beginBody() ?>
 <?= Alert::widget() ?>
 
-<?= $this->render('_header.php') ?>
-
 <?= $this->render('_navigation.php') ?>
 
 <?= $content ?>
-
-<?= $this->render('_footer.php') ?>
 
 <?php $this->endBody() ?>
 

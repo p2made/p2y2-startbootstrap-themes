@@ -18,11 +18,9 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Request password reset';
 ?>
-
-<div class="container">
-
-	<div class="row">
-		<div class="box">
+<header>
+	<div class="container">
+		<div class="row">
 			<div class="col-lg-12">
 				<hr>
 				<h2 class="intro-text text-center">
@@ -31,7 +29,7 @@ $this->title = 'Request password reset';
 				<hr>
 			</div>
 			<div class="col-lg-6 col-lg-offset-3">
-				<div class="panel panel-info">
+				<div class="panel text-primary">
 					<div class="panel-heading">
 						Please fill out your email. A link to reset password will be sent there.
 					</div>
@@ -50,6 +48,5 @@ $this->title = 'Request password reset';
 			</div>
 		</div>
 	</div>
-
-</div>
-<!-- /.container -->
+</header>
+<?= $this->render('_footer.php') ?>

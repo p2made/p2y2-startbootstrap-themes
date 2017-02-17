@@ -12,8 +12,8 @@
 <aside class="bg-dark">
 	<div class="container text-center">
 		<div class="call-to-action">
-			<h2>Free Download at Start Bootstrap!</h2>
-			<a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+			<h2>Free Download from <a href="https://github.com/p2made/">p2made</a> at GitHub!</h2>
+			<a href="https://github.com/p2made/yii2-startbootstrap-themes" class="btn btn-default btn-xl sr-button">Download Now!</a>
 		</div>
 	</div>
 </aside>

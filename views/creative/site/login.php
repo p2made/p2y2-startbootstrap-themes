@@ -26,32 +26,35 @@ $this->title = 'Login';
 					<div class="col-lg-12">
 						<h2 class="intro-text text-center">
 							<?= Html::encode($this->title) ?>
-							<strong>to start your session</strong>
 						</h2>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3">
-						<?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
+						<div class="panel text-primary">
+							<div class="panel-body">
+								<?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
-						<?= $form->field($model, 'username')->textInput([
-							'autofocus' => true
-						]) ?>
+								<?= $form->field($model, 'username')->textInput([
+									'autofocus' => true
+								]) ?>
 
-						<?= $form->field($model, 'password')->passwordInput() ?>
+								<?= $form->field($model, 'password')->passwordInput() ?>
 
-						<?= $form->field($model, 'rememberMe')->checkbox() ?>
+								<?= $form->field($model, 'rememberMe')->checkbox() ?>
 
-						<div style="margin:1em 0">
-							If you forgot your password you can
-							<?= Html::a('reset it', ['site/request-password-reset']) ?>.
+								<div style="color:#999;margin:1em 0">
+									If you forgot your password you can
+									<?= Html::a('reset it', ['site/request-password-reset']) ?>.
+								</div>
+
+								<div class="form-group">
+									<?= Html::submitButton('Login', [
+										'class' => 'btn btn-primary', 'name' => 'login-button'
+									]) ?>
+								</div>
+
+								<?php ActiveForm::end(); ?>
+							</div>
 						</div>
-
-						<div class="form-group">
-							<?= Html::submitButton('Login', [
-								'class' => 'btn btn-primary', 'name' => 'login-button'
-							]) ?>
-						</div>
-
-						<?php ActiveForm::end(); ?>
 
 						<p class="text-center">- OR -</p>
 

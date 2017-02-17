@@ -30,23 +30,27 @@ $this->title = 'Signup';
 						</h2>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3">
-						<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+						<div class="panel text-primary">
+							<div class="panel-body">
+								<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 
-						<?= $form->field($model, 'username')->textInput([
-							'autofocus' => true
-						]) ?>
+								<?= $form->field($model, 'username')->textInput([
+									'autofocus' => true
+								]) ?>
 
-						<?= $form->field($model, 'email') ?>
+								<?= $form->field($model, 'email') ?>
 
-						<?= $form->field($model, 'password')->passwordInput() ?>
+								<?= $form->field($model, 'password')->passwordInput() ?>
 
-						<div class="form-group">
-							<?= Html::submitButton('Signup', [
-								'class' => 'btn btn-primary', 'name' => 'signup-button'
-							]) ?>
+								<div class="form-group">
+									<?= Html::submitButton('Signup', [
+										'class' => 'btn btn-primary', 'name' => 'signup-button'
+									]) ?>
+								</div>
+
+								<?php ActiveForm::end(); ?>
+							</div>
 						</div>
-
-						<?php ActiveForm::end(); ?>
 
 						<p class="text-center">- OR -</p>
 

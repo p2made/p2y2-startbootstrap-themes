@@ -13,23 +13,24 @@ use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
 
 NavBar::begin([
-	'brandLabel' => 'P2 Business Casual',
-	'brandUrl' => Yii::$app->homeUrl,
+	'brandLabel' => 'P2 New Age',
+	'brandUrl' => '#page-top',
 	'options' => [
-		'class' => 'navbar navbar-default',
+		'class' => 'navbar navbar-default navbar-fixed-top',
+	],
+	'brandOptions' => [
+		'class' => 'navbar-brand page-scroll',
 	],
 ]);
 $menuItems = [
-	['label' => 'Home', 'url' => ['/site/index']],
-	['label' => 'About', 'url' => ['/site/about']],
-	['label' => 'Contact', 'url' => ['/site/contact']],
-	['label' => 'Blog', 'url' =>['/site/page', 'view' => 'blog']],
+	['label' => 'Download', 'url' =>'#download', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'Features', 'url' =>'#features', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
 ];
 if (Yii::$app->user->isGuest) {
-	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
+	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'linkOptions' => ['class' => 'page-scroll'], 'items' => [
 		['label' => 'Login', 'url' => ['/site/login']],
 		['label' => 'Signup', 'url' => ['/site/signup']],
 	]];
@@ -41,7 +42,7 @@ if (Yii::$app->user->isGuest) {
 	];
 }
 echo Nav::widget([
-	'options' => ['class' => 'nav navbar-nav'],
+	'options' => ['class' => 'nav navbar-nav navbar-right'],
 	'items' => $menuItems,
 ]);
 NavBar::end();

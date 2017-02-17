@@ -26,20 +26,19 @@ use yii\bootstrap\NavBar;
 <body>
 <?php $this->beginBody() ?>
 
-<?= $this->render('_header.php') ?>
-
 <?php
 NavBar::begin([
-	'brandLabel' => 'P2 Modern Business',
+	'brandLabel' => 'P2 New Age',
 	'brandUrl' => Yii::$app->homeUrl,
 	'options' => [
-		'class' => 'navbar navbar-default',
+		'class' => 'navbar navbar-default navbar-fixed-top',
+	],
+	'brandOptions' => [
+		'class' => 'navbar-brand page-scroll',
 	],
 ]);
 
-$menuItems = [
-	['label' => 'Home', 'url' => ['/site/index']],
-];
+$menuItems = [];
 if (Yii::$app->controller->action->id === 'signup') {
 	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
 } else {
@@ -47,15 +46,13 @@ if (Yii::$app->controller->action->id === 'signup') {
 }
 
 echo Nav::widget([
-	'options' => ['class' => 'nav navbar-nav'],
+	'options' => ['class' => 'nav navbar-nav navbar-right'],
 	'items' => $menuItems,
 ]);
 NavBar::end();
 ?>
 
 <?= $content ?>
-
-<?= $this->render('_footer.php') ?>
 
 <?php $this->endBody() ?>
 </body>

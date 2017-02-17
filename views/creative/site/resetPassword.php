@@ -29,15 +29,22 @@ $this->title = 'Reset password';
 						</h2>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3">
-						<?php $form = ActiveForm::begin(['id' => 'reset-password-form']); ?>
+						<div class="panel text-primary">
+							<div class="panel-heading">
+								Please fill out your email. A link to reset password will be sent there.
+							</div>
+							<div class="panel-body">
+								<?php $form = ActiveForm::begin(['id' => 'reset-password-form']); ?>
 
-						<?= $form->field($model, 'password')->passwordInput(['autofocus' => true]) ?>
+								<?= $form->field($model, 'password')->passwordInput(['autofocus' => true]) ?>
 
-						<div class="form-group">
-							<?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
+								<div class="form-group">
+									<?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>
+								</div>
+
+								<?php ActiveForm::end(); ?>
+							</div>
 						</div>
-
-						<?php ActiveForm::end(); ?>
 					</div>
 				</div>
 			</div>

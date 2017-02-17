@@ -1,6 +1,6 @@
 <?php
 /**
- * contact.php
+ * _contact.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman

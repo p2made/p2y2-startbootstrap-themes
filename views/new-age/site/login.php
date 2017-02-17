@@ -18,21 +18,18 @@ use p2made\helpers\BSocial;
 
 $this->title = 'Login';
 ?>
-
-<div class="container">
-
-	<div class="row">
-		<div class="box">
+<header>
+	<div class="container">
+		<div class="row">
 			<div class="col-lg-12">
 				<hr>
 				<h2 class="intro-text text-center">
 					<?= Html::encode($this->title) ?>
-					<strong>to start your session</strong>
 				</h2>
 				<hr>
 			</div>
 			<div class="col-lg-6 col-lg-offset-3">
-				<div class="panel panel-info">
+				<div class="panel text-primary">
 					<div class="panel-body">
 						<?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
@@ -74,6 +71,5 @@ $this->title = 'Login';
 			<div class="clearfix"></div>
 		</div>
 	</div>
-
-</div>
-<!-- /.container -->
+</header>
+<?= $this->render('_footer.php') ?>
