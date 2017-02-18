@@ -1,6 +1,6 @@
 <?php
 /**
- * main.php
+ * primary.php
  *
  * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
@@ -12,26 +12,22 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\theme\Agency\assets\AgencyAsset::register($this);
+use yii\bootstrap\Html;
+use common\widgets\Alert;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<meta charset="<?= Yii::$app->charset ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top" class="index">
+<body id="page-top">
 <?php $this->beginBody() ?>
+<?= Alert::widget() ?>
 
 <?= $this->render('_navigation.php') ?>
 
 <?= $content ?>
-
-<?= $this->render('_footer.php') ?>
 
 <?php $this->endBody() ?>
 </body>

@@ -13,15 +13,11 @@ use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
 
 $menuItems = [
-	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
-	['label' => 'Services', 'url' =>'#services', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Portfolio', 'url' =>'#portfolio', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'About', 'url' =>'#about', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Team', 'url' =>'#team', 'linkOptions' => ['class' => 'page-scroll']],
-	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'About', 'url' =>'#'],
+	['label' => 'Services', 'url' =>'#'],
+	['label' => 'Contact', 'url' =>'#'],
 ];
 if (Yii::$app->user->isGuest) {
 	$menuItems[] = ['label' => 'Users', 'linkOptions' => ['class' => 'page-scroll'], 'items' => [
@@ -40,17 +36,17 @@ if (Yii::$app->user->isGuest) {
 }
 
 NavBar::begin([
-	'brandLabel' => 'P2 Freelancer',
-	'brandUrl' => '#page-top',
+	'brandLabel' => 'P2 Business Frontpage',
+	'brandUrl' => '#',
 	'brandOptions'=>[
 		'class'=>'page-scroll'
 	],
 	'options' => [
-		'class' => 'navbar navbar-default navbar-custom navbar-fixed-top',
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
 	],
 ]);
 echo Nav::widget([
-	'options' => ['class' => 'navbar-nav navbar-right'],
+	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,
 ]);
 NavBar::end();

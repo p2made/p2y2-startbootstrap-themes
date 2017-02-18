@@ -47,6 +47,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 				'pathMap' => [
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/agency',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-casual',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-frontpage',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/creative',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/landing-page',
