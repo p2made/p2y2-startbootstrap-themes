@@ -43,7 +43,7 @@ class GrayscaleMapsAsset extends \p2made\assets\base\P2AssetBundle
 			'baseUrl' => '//maps.googleapis.com/maps',
 			'css' => [],
 			'js' => [
-				'js?key=AIzaSyBUZR09a3hu5WUVcX95Apah6uAzBsWrvzk&sensor=false',
+				'js?key=AIzaSyAja-swTo8YpCxouhLq9WaPDNXgZZItHPo&sensor=false',
 			],
 		],
 

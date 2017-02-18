@@ -32,6 +32,7 @@ class GrayscaleAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
+			'p2made\assets\JqueryEasingAsset',
 			'p2made\SB\assets\GrayscaleFontsAsset',
 			'p2made\SB\assets\GrayscaleMapsAsset',
 		],

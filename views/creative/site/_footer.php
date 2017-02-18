@@ -12,7 +12,6 @@
 use yii\helpers\Html;
 use p2made\helpers\FA;
 ?>
-
 <footer>
 	<div class="container">
 		<div class="row">

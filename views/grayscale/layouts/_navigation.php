@@ -15,10 +15,10 @@ use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
 $menuItems = [
-	['label' => 'About', 'url' => '#about'],
-	['label' => 'Services', 'url' => '#services'],
-	['label' => 'Portfolio', 'url' => '#portfolio'],
-	['label' => 'Contact', 'url' => '#contact'],
+	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
+	['label' => 'About', 'url' =>'#about', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'Download', 'url' =>'#download', 'linkOptions' => ['class' => 'page-scroll']],
+	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
 ];
 if (Yii::$app->user->isGuest) {
 	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
@@ -34,18 +34,20 @@ if (Yii::$app->user->isGuest) {
 }
 ?>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+				Menu <i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand page-scroll" href="#page-top">P2 Creative</a>
+			<a class="navbar-brand page-scroll" href="#page-top">
+				<i class="fa fa-play-circle"></i> <span class="light">P2</span> Grayscale
+			</a>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 <?php
 	echo Nav::widget([
-		'options' => ['class' => 'navbar-nav navbar-right'],
+		'options' => ['class' => 'nav navbar-nav'],
 		'items' => $menuItems,
 	]);
 ?>

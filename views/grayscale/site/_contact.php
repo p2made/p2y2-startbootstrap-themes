@@ -11,22 +11,25 @@
 
 use yii\helpers\Html;
 ?>
-<section id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 text-center">
-				<h2 class="section-heading">Let's Get In Touch!</h2>
-				<hr class="primary">
-				<p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-			</div>
-			<div class="col-lg-4 col-lg-offset-2 text-center">
-				<i class="fa fa-phone fa-3x sr-contact"></i>
-				<p>+61-7-4567-4321</p>
-			</div>
-			<div class="col-lg-4 text-center">
-				<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-				<p><a href="mailto:contact@example.com">contact@example.com</a></p>
-			</div>
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>Contact Start Bootstrap</h2>
+			<p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+			<p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+			</p>
+			<ul class="list-inline banner-social-buttons">
+				<li>
+					<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+				</li>
+				<li>
+					<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>

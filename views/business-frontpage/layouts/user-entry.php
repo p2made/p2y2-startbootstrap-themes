@@ -29,13 +29,13 @@ if (Yii::$app->controller->action->id === 'signup') {
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top">
+<body>
 <?php $this->beginBody() ?>
 
 <?php
 NavBar::begin([
 	'brandLabel' => 'P2 Business Frontpage',
-	'brandUrl' => '#',
+	'brandUrl' => '/',
 	'brandOptions'=>[
 		'class'=>'page-scroll'
 	],
