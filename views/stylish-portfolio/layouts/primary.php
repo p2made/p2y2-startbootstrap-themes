@@ -21,7 +21,7 @@ use common\widgets\Alert;
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <?php $this->beginBody() ?>
 <?= Alert::widget() ?>
 

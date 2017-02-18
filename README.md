@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v0.10.0
+P2 Start Bootstrap Themes v0.11.0
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
@@ -16,19 +16,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "^0.2"
+composer require --prefer-dist p2made/yii2-startbootstrap-themes "^0.11"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^0.2"
+php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^0.11"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-startbootstrap-themes": "^0.2"
+"p2made/yii2-startbootstrap-themes": "^0.11"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.
@@ -51,6 +51,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/creative',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/grayscale',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/heroic-features',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/landing-page',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/new-age',

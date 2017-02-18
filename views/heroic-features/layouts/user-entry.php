@@ -15,13 +15,6 @@ use yii\bootstrap\NavBar;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-$menuItems = [];
-if (Yii::$app->controller->action->id === 'signup') {
-	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-} else {
-	$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-}
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -29,27 +22,38 @@ if (Yii::$app->controller->action->id === 'signup') {
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top">
+<body>
 <?php $this->beginBody() ?>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-			</button>
-			<a class="navbar-brand page-scroll" href="/">P2 Creative</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 <?php
-	echo Nav::widget([
-		'options' => ['class' => 'navbar-nav navbar-right'],
-		'items' => $menuItems,
-	]);
+$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+
+$menuItems = [];
+if (Yii::$app->controller->action->id === 'login') {
+	$menuItems[] = $signupItem;
+} else {
+	$menuItems[] = $loginItem;
+}
+if (Yii::$app->controller->action->id === 'error') {
+	$menuItems[] = $signupItem;
+}
+
+NavBar::begin([
+	'brandLabel' => 'P2 Heroic Features',
+	'brandUrl' => Yii::$app->homeUrl,
+	'options' => [
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
+	],
+]);
+
+echo Nav::widget([
+	'options' => ['class' => 'nav navbar-nav'],
+	'items' => $menuItems,
+]);
+
+NavBar::end();
 ?>
-		</div>
-	</div>
-</nav>
 
 <?= $content ?>
 

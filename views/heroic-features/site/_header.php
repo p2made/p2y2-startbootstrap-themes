@@ -11,15 +11,12 @@
 
 use yii\helpers\Html;
 ?>
-<header>
-	<div class="header-content">
-		<div class="header-content-inner">
-			<h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-			<hr>
-			<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-			<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-		</div>
-	</div>
+<!-- Intro Header -->
+<!-- Jumbotron Header -->
+<header class="jumbotron hero-spacer">
+	<h1>A Warm Welcome!</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+	<p><a class="btn btn-primary btn-large">Call to action!</a>
+	</p>
 </header>
-
 

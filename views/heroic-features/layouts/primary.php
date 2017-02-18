@@ -21,7 +21,7 @@ use common\widgets\Alert;
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top">
+<body>
 <?php $this->beginBody() ?>
 <?= Alert::widget() ?>
 

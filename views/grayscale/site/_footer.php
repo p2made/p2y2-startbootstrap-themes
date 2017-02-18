@@ -16,7 +16,7 @@ use p2made\helpers\FA;
 <footer>
 	<div class="container text-center">
 		<p>Copyright <?= FA::i('copyright') ?> Your Website <?= date("Y") ?></p>
-		<p ><?= Yii::powered() ?></p>
+		<p><?= Yii::powered() ?></p>
 	</div>
 </footer>
 

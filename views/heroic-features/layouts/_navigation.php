@@ -9,16 +9,15 @@
  * @license MIT
  */
 
-use yii\bootstrap\Html;
+use yii\helpers\Html;
 use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
 
 $menuItems = [
-	['label' => 'About', 'url' => '#about'],
-	['label' => 'Services', 'url' => '#services'],
-	['label' => 'Portfolio', 'url' => '#portfolio'],
-	['label' => 'Contact', 'url' => '#contact'],
+	['label' => 'About', 'url' =>'#'],
+	['label' => 'Services', 'url' =>'#'],
+	['label' => 'Contact', 'url' =>'#'],
 ];
 if (Yii::$app->user->isGuest) {
 	$menuItems[] = ['label' => 'Users', 'url' =>'#', 'items' => [
@@ -32,23 +31,18 @@ if (Yii::$app->user->isGuest) {
 		'linkOptions' => ['data-method' => 'post']
 	];
 }
-?>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-			</button>
-			<a class="navbar-brand page-scroll" href="#page-top">P2 Creative</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<?php
-	echo Nav::widget([
-		'options' => ['class' => 'navbar-nav navbar-right'],
-		'items' => $menuItems,
-	]);
-?>
-		</div>
-	</div>
-</nav>
+NavBar::begin([
+	'brandLabel' => 'P2 Heroic Features',
+	'brandUrl' => '#',
+	'options' => [
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
+	],
+]);
+
+echo Nav::widget([
+	'options' => ['class' => 'nav navbar-nav'],
+	'items' => $menuItems,
+]);
+
+NavBar::end();

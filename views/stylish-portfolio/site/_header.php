@@ -11,13 +11,20 @@
 
 use yii\helpers\Html;
 ?>
-<header>
-	<div class="header-content">
-		<div class="header-content-inner">
-			<h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-			<hr>
-			<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-			<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+<!-- Intro Header -->
+<header class="intro">
+	<div class="intro-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1 class="brand-heading">P2 Grayscale</h1>
+					<p class="intro-text">A free, responsive, one page Bootstrap theme.
+						<br>Created by Start Bootstrap &amp; p2made.</p>
+					<a href="#about" class="btn btn-circle page-scroll">
+						<i class="fa fa-angle-double-down animated"></i>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>

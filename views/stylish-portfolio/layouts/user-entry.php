@@ -16,11 +16,17 @@ use yii\bootstrap\NavBar;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+
 $menuItems = [];
-if (Yii::$app->controller->action->id === 'signup') {
-	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+if (Yii::$app->controller->action->id === 'login') {
+	$menuItems[] = $signupItem;
 } else {
-	$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+	$menuItems[] = $loginItem;
+}
+if (Yii::$app->controller->action->id === 'error') {
+	$menuItems[] = $signupItem;
 }
 ?>
 <?php $this->beginPage() ?>
@@ -29,21 +35,21 @@ if (Yii::$app->controller->action->id === 'signup') {
 <head>
 	<?= $this->render('_head.php', []) ?>
 </head>
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <?php $this->beginBody() ?>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-			</button>
-			<a class="navbar-brand page-scroll" href="/">P2 Creative</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Menu <i class="fa fa-bars"></i></button>
+			<a class="navbar-brand page-scroll" href="/">
+				<i class="fa fa-play-circle"></i> <span class="light">P2</span> Grayscale
+			</a>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 <?php
 	echo Nav::widget([
-		'options' => ['class' => 'navbar-nav navbar-right'],
+		'options' => ['class' => 'nav navbar-nav'],
 		'items' => $menuItems,
 	]);
 ?>

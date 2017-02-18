@@ -12,11 +12,11 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\SB\assets\CreativeAsset::register($this);
+p2made\SB\assets\HeroicFeaturesAsset::register($this);
 
 $layout = 'primary';
 $actionId = Yii::$app->controller->action->id;
-$entryIds  = [NULL, 'login', 'signup', 'request-password-reset'];
+$entryIds  = [NULL, 'login', 'signup', 'request-password-reset', 'error'];
 $foundId = array_search($actionId, $entryIds);
 
 if (false !== $foundId) {

@@ -14,16 +14,33 @@
 use yii\bootstrap\Html;
 use p2made\helpers\FA;
 
-$this->title = 'P2 Creative';
-$assetDir = Yii::$app->assetManager->getPublishedUrl(
-	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/creative'
-);
+$this->title = 'P2 Heroic Features';
 ?>
+<div class="container">
+	<?= $this->render('_header.php') ?>
 
-<?= $this->render('_header.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_about.php') ?>
-<?= $this->render('_services.php') ?>
-<?= $this->render('_portfolio.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_aside.php') ?>
-<?= $this->render('_contact.php') ?>
-<?= $this->render('_footer.php') ?>
+	<hr>
+
+	<!-- Title -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h3>Latest Features</h3>
+		</div>
+	</div>
+	<!-- /.row -->
+
+	<!-- Page Features -->
+	<div class="row text-center">
+
+		<?= $this->render('_feature.php') ?>
+		<?= $this->render('_feature.php') ?>
+		<?= $this->render('_feature.php') ?>
+		<?= $this->render('_feature.php') ?>
+
+	</div>
+	<!-- /.row -->
+
+	<hr>
+
+	<?= $this->render('_footer.php') ?>
+</div>
