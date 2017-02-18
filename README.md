@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v0.8.0
+P2 Start Bootstrap Themes v0.9.0
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
@@ -47,9 +47,11 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 				'pathMap' => [
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/agency',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-casual',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/creative',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/landing-page',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/new-age',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/one-page-wonder',
 				],
 			],

@@ -25,7 +25,6 @@ class _ExampleAsset extends \p2made\assets\base\P2AssetBundle
 
 		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-startbootstrap-themes/assets/lib/__THEME_NAME__',
-			//'baseUrl' => '//fonts.googleapis.com',	insteadt of sourcePath for google fonts assets
 			'css' => [
 				'css/__THEME_NAME__.min.css',
 			],
