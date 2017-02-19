@@ -15,13 +15,6 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
-NavBar::begin([
-	'brandLabel' => 'P2 Landing Page',
-	'brandUrl' => Yii::$app->homeUrl,
-	'options' => [
-		'class' => 'navbar navbar-inverse navbar-fixed-top',
-	],
-]);
 $menuItems = [
 	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
 	['label' => 'About', 'url' => '#about'],
@@ -40,6 +33,14 @@ if (Yii::$app->user->isGuest) {
 		'linkOptions' => ['data-method' => 'post']
 	];
 }
+
+NavBar::begin([
+	'brandLabel' => 'P2 Landing Page',
+	'brandUrl' => '#',
+	'options' => [
+		'class' => 'navbar navbar-inverse navbar-fixed-top',
+	],
+]);
 echo Nav::widget([
 	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,

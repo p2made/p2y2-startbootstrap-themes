@@ -35,7 +35,7 @@ if (Yii::$app->controller->action->id === 'error') {
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_head.php', []) ?>
+	<?= $this->render('_head.php') ?>
 </head>
 <body>
 	<?php $this->beginBody() ?>

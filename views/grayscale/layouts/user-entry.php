@@ -33,33 +33,33 @@ if (Yii::$app->controller->action->id === 'error') {
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_head.php', []) ?>
+	<?= $this->render('_head.php') ?>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<?php $this->beginBody() ?>
+	<?php $this->beginBody() ?>
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Menu <i class="fa fa-bars"></i></button>
-			<a class="navbar-brand page-scroll" href="/">
-				<i class="fa fa-play-circle"></i> <span class="light">P2</span> Grayscale
-			</a>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Menu <i class="fa fa-bars"></i></button>
+				<a class="navbar-brand page-scroll" href="<?= Yii::$app->homeUrl ?>">
+					<i class="fa fa-play-circle"></i> <span class="light">P2</span> Grayscale
+				</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<?php
+					echo Nav::widget([
+						'options' => ['class' => 'nav navbar-nav'],
+						'items' => $menuItems,
+					]);
+				?>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-<?php
-	echo Nav::widget([
-		'options' => ['class' => 'nav navbar-nav'],
-		'items' => $menuItems,
-	]);
-?>
-		</div>
-	</div>
-</nav>
+	</nav>
 
-<?= $content ?>
+	<?= $content ?>
 
-<?php $this->endBody() ?>
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

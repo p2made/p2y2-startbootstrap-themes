@@ -15,45 +15,43 @@ use yii\bootstrap\NavBar;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-p2made\SB\assets\LandingPageAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
 	<?php $this->beginBody() ?>
 
 	<?php
-	NavBar::begin([
-		'brandLabel' => 'P2 Modern Business',
-		'brandUrl' => Yii::$app->homeUrl,
-		'options' => [
-			'class' => 'navbar navbar-inverse navbar-fixed-top',
-		],
-	]);
+		NavBar::begin([
+			'brandLabel' => 'P2 Modern Business',
+			'brandUrl' => Yii::$app->homeUrl,
+			'options' => [
+				'class' => 'navbar navbar-inverse navbar-fixed-top',
+			],
+		]);
 
-	$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
-	$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+		$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+		$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
 
-	$menuItems = [];
-	if (Yii::$app->controller->action->id === 'login') {
-		$menuItems[] = $signupItem;
-	} else {
-		$menuItems[] = $loginItem;
-	}
-	if (Yii::$app->controller->action->id === 'error') {
-		$menuItems[] = $signupItem;
-	}
+		$menuItems = [];
+		if (Yii::$app->controller->action->id === 'login') {
+			$menuItems[] = $signupItem;
+		} else {
+			$menuItems[] = $loginItem;
+		}
+		if (Yii::$app->controller->action->id === 'error') {
+			$menuItems[] = $signupItem;
+		}
 
-	echo Nav::widget([
-		'options' => ['class' => 'nav navbar-nav'],
-		'items' => $menuItems,
-	]);
-	NavBar::end();
+		echo Nav::widget([
+			'options' => ['class' => 'nav navbar-nav'],
+			'items' => $menuItems,
+		]);
+		NavBar::end();
 	?>
 
 	<?= $content ?>

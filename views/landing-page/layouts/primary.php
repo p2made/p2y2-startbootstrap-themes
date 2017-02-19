@@ -13,14 +13,12 @@
 /* @var $content string */
 
 use yii\bootstrap\Html;
-
-p2made\SB\assets\LandingPageAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
 	<?php $this->beginBody() ?>

@@ -15,17 +15,7 @@ use yii\bootstrap\NavBar;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-	<?= $this->render('_head.php', []) ?>
-</head>
-<body>
-<?php $this->beginBody() ?>
 
-<?php
 $loginItem = ['label' => 'Login', 'url' => ['/site/login']];
 $signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
 
@@ -38,26 +28,36 @@ if (Yii::$app->controller->action->id === 'login') {
 if (Yii::$app->controller->action->id === 'error') {
 	$menuItems[] = $signupItem;
 }
-
-NavBar::begin([
-	'brandLabel' => 'P2 Heroic Features',
-	'brandUrl' => Yii::$app->homeUrl,
-	'options' => [
-		'class' => 'navbar navbar-inverse navbar-fixed-top',
-	],
-]);
-
-echo Nav::widget([
-	'options' => ['class' => 'nav navbar-nav'],
-	'items' => $menuItems,
-]);
-
-NavBar::end();
 ?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+<head>
+	<?= $this->render('_head.php') ?>
+</head>
+<body>
+	<?php $this->beginBody() ?>
 
-<?= $content ?>
+	<?php
+		NavBar::begin([
+			'brandLabel' => 'P2 Heroic Features',
+			'brandUrl' => Yii::$app->homeUrl,
+			'options' => [
+				'class' => 'navbar navbar-inverse navbar-fixed-top',
+			],
+		]);
 
-<?php $this->endBody() ?>
+		echo Nav::widget([
+			'options' => ['class' => 'nav navbar-nav'],
+			'items' => $menuItems,
+		]);
+
+		NavBar::end();
+	?>
+
+	<?= $content ?>
+
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

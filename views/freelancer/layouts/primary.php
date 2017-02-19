@@ -19,7 +19,7 @@ use common\widgets\Alert;
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_head.php', []) ?>
+	<?= $this->render('_head.php') ?>
 </head>
 <body id="page-top" class="index">
 	<?php $this->beginBody() ?>

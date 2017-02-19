@@ -18,5 +18,5 @@ use yii\bootstrap\Html;
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?= Html::csrfMetaTags() ?>
-<title><?= Html::encode($this->title) ?> | P2 Grayscale</title>
+<title><?= Html::encode($this->title) ?> | P2 Landing Page</title>
 <?php $this->head() ?>
