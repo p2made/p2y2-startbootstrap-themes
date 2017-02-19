@@ -11,16 +11,15 @@
 
 use yii\bootstrap\Html;
 ?>
-<!-- About Section -->
-<section id="about" class="container content-section text-center">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>About Grayscale</h2>
-			<p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-			<p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-			<p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+<!-- About -->
+<section id="about" class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+				<p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+			</div>
 		</div>
 	</div>
 </section>
-
 

@@ -35,31 +35,28 @@ if (Yii::$app->controller->action->id === 'error') {
 <head>
 	<?= $this->render('_head.php') ?>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<?php $this->beginBody() ?>
+<body>
+	<?php $this->beginBody() ?>
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Menu <i class="fa fa-bars"></i></button>
-			<a class="navbar-brand page-scroll" href="/">
-				<i class="fa fa-play-circle"></i> <span class="light">P2</span> Grayscale
-			</a>
-		</div>
-		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-<?php
-	echo Nav::widget([
-		'options' => ['class' => 'nav navbar-nav'],
-		'items' => $menuItems,
-	]);
-?>
-		</div>
-	</div>
-</nav>
+	<!-- Navigation -->
+	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<nav id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+			<li class="sidebar-brand">
+				<a href="#top" onclick=$("#menu-close").click();>P2 Stylish Portfolio</a>
+			</li>
+			<li><a href="#top" onclick=$("#menu-close").click();>Home</a></li>
+			<li><a href="#about" onclick=$("#menu-close").click();>About</a></li>
+			<li><a href="#services" onclick=$("#menu-close").click();>Services</a></li>
+			<li><a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a></li>
+			<li><a href="#contact" onclick=$("#menu-close").click();>Contact</a></li>
+		</ul>
+	</nav>
 
-<?= $content ?>
+	<?= $content ?>
 
-<?php $this->endBody() ?>
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

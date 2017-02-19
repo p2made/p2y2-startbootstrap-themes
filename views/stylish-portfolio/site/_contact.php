@@ -11,27 +11,8 @@
 
 use yii\helpers\Html;
 ?>
-<!-- Contact Section -->
-<section id="contact" class="container content-section text-center">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Contact Start Bootstrap</h2>
-			<p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-			<p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-			</p>
-			<ul class="list-inline banner-social-buttons">
-				<li>
-					<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-				</li>
-				<li>
-					<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-				</li>
-				<li>
-					<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<!-- Map -->
+<section id="contact" class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.6428629258003!2d152.9572520512193!3d-26.6278919877177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9378fc4e5d3fdb%3A0x4811b4058d2920d4!2sCurrie+St%2C+Nambour+QLD+4560!5e0!3m2!1sen!2sau!4v1487522093009" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </section>
-
 

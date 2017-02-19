@@ -14,24 +14,18 @@
 use yii\bootstrap\Html;
 use p2made\helpers\FA;
 
-$this->title = 'Home';
+$this->title = 'P2 Grayscale';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(
-	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/stylish-portfolio'
+	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/grayscale'
 );
 ?>
 
 <?= $this->render('_header.php') ?>
 <?= $this->render('_about.php') ?>
-<?= $this->render('_services.php') ?>
-
-<!-- Callout -->
-<aside class="callout">
-	<div class="text-vertical-center">
-		<h1>Vertically Centered Text</h1>
-	</div>
-</aside>
-
-<?= $this->render('_portfolio.php', ['assetDir' => $assetDir]) ?>
-<?= $this->render('_call-to-action.php') ?>
+<?= $this->render('_download.php') ?>
 <?= $this->render('_contact.php') ?>
+
+<!-- Map Section -->
+<div id="map"></div>
+
 <?= $this->render('_footer.php') ?>
