@@ -15,6 +15,8 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
+$linkOptions = ['class' => 'page-scroll'];
+$dropOptions = ['class' => 'navbar-inverse'];
 $menuItems = [
 	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],
 	['label' => 'Services', 'url' =>'#services', 'linkOptions' => ['class' => 'page-scroll']],
@@ -24,9 +26,9 @@ $menuItems = [
 	['label' => 'Contact', 'url' =>'#contact', 'linkOptions' => ['class' => 'page-scroll']],
 ];
 if (Yii::$app->user->isGuest) {
-	$menuItems[] = ['label' => 'Users', 'linkOptions' => ['class' => 'page-scroll'], 'items' => [
-		['label' => 'Login', 'url' => ['/site/login']],
-		['label' => 'Signup', 'url' => ['/site/signup']],
+	$menuItems[] = ['label' => 'Users', 'linkOptions' => $linkOptions, 'items' => [
+		['label' => 'Login', 'url' => ['/site/login'], 'options' => $dropOptions],
+		['label' => 'Signup', 'url' => ['/site/signup'], 'options' => $dropOptions],
 	]];
 } else {
 	$menuItems[] = '<li>'

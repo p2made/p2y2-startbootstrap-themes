@@ -11,7 +11,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'P2Agency | Start Bootstrap Theme';
+$this->title = 'Home';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(
 	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/freelancer'
 );

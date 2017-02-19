@@ -18,8 +18,8 @@ use p2made\helpers\FA;
 				<div class="row">
 					<div class="footer-col col-md-4">
 						<h3>Location</h3>
-						<p>3481 Melrose Place
-						<br>Beverly Hills, CA 90210</p>
+						<p>Currie St
+						<br>Nambour, Qld 4560</p>
 					</div>
 					<div class="footer-col col-md-4">
 						<h3>Around the Web</h3>
@@ -62,7 +62,12 @@ use p2made\helpers\FA;
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						Copyright <?= FA::i('copyright') ?> Your Website <?= date("Y") ?>
+				<p class="pull-left">
+					Copyright <?= FA::i('copyright') ?> Your Website <?= date("Y") ?>
+				</p>
+				<p class="pull-right">
+					<?= Yii::powered() ?>
+				</p>
 					</div>
 				</div>
 			</div>
@@ -75,5 +80,4 @@ use p2made\helpers\FA;
 			<i class="fa fa-chevron-up"></i>
 		</a>
 	</div>
-
 

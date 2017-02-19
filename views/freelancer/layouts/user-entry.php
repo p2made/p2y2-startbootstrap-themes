@@ -10,25 +10,57 @@
  */
 
 use yii\bootstrap\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\theme\sbAdmin\assets\SBAdmin2UserAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
+$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+
+$menuItems = [];
+if (Yii::$app->controller->action->id === 'login') {
+	$menuItems[] = $signupItem;
+} else {
+	$menuItems[] = $loginItem;
+}
+if (Yii::$app->controller->action->id === 'error') {
+	$menuItems[] = $signupItem;
+}
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_html-header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
+	<?php $this->beginBody() ?>
+
+	<?php
+		NavBar::begin([
+			'brandLabel' => 'P2 Freelancer',
+			'brandUrl' => Yii::$app->homeUrl,
+			'brandOptions'=>[
+				'class'=>'page-scroll'
+			],
+			'options' => [
+				'class' => 'navbar navbar-default navbar-custom navbar-fixed-top',
+			],
+		]);
+		echo Nav::widget([
+			'options' => ['class' => 'navbar-nav navbar-right'],
+			'items' => $menuItems,
+		]);
+		NavBar::end();
+	?>
 
 	<?= $content ?>
 
-<?php $this->endBody() ?>
+	<?= $this->render('_footer.php') ?>
+
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

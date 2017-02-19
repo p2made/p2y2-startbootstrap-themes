@@ -14,7 +14,7 @@
 use yii\bootstrap\Html;
 use p2made\helpers\FA;
 
-$this->title = 'P2 Creative';
+$this->title = 'Home';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(
 	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/creative'
 );
