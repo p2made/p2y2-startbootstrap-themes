@@ -14,9 +14,9 @@ use yii\bootstrap\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 ?>
-	<meta charset="<?= Yii::$app->charset ?>"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?> | P2 Business Casual</title>
-	<?php $this->head() ?>
+<meta charset="<?= Yii::$app->charset ?>"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?= Html::csrfMetaTags() ?>
+<title><?= Html::encode($this->title) ?> | P2 Agency</title>
+<?php $this->head() ?>

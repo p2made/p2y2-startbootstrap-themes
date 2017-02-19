@@ -16,11 +16,17 @@ use yii\bootstrap\NavBar;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-$menuItems = [];
-if (Yii::$app->controller->action->id === 'signup') {
-	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+
+$menuItems = [['label' => 'Home', 'url' => Yii::$app->homeUrl]];
+if (Yii::$app->controller->action->id === 'login') {
+	$menuItems[] = $signupItem;
 } else {
-	$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+	$menuItems[] = $loginItem;
+}
+if (Yii::$app->controller->action->id === 'error') {
+	$menuItems[] = $signupItem;
 }
 ?>
 <?php $this->beginPage() ?>
@@ -35,7 +41,7 @@ if (Yii::$app->controller->action->id === 'signup') {
 <?php
 NavBar::begin([
 	'brandLabel' => 'P2 Business Frontpage',
-	'brandUrl' => '/',
+	'brandUrl' => Yii::$app->homeUrl,
 	'brandOptions'=>[
 		'class'=>'page-scroll'
 	],
@@ -44,7 +50,7 @@ NavBar::begin([
 	],
 ]);
 echo Nav::widget([
-	'options' => ['class' => 'navbar-nav navbar-right'],
+	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,
 ]);
 NavBar::end();

@@ -40,7 +40,7 @@ $this->title = $name;
 
 		<div class="col-lg-12">
 			<div class="jumbotron">
-				<div class="alert alert-danger">
+				<div class="alert alert-danger text-left">
 					<?= nl2br(Html::encode($message)) ?>
 				</div>
 				<p>Here are some helpful links to get you back on track:</p>

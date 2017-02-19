@@ -29,7 +29,7 @@ $this->title = 'Login';
 						</h2>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3">
-						<div class="panel text-primary">
+						<div class="panel text-primary text-left">
 							<div class="panel-body">
 								<?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 

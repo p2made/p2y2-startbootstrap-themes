@@ -29,7 +29,7 @@ $this->title = 'Request password reset';
 						</h2>
 					</div>
 					<div class="col-lg-6 col-lg-offset-3">
-						<div class="panel text-primary">
+						<div class="panel text-primary text-left">
 							<div class="panel-heading">
 								Please fill out your email. A link to reset password will be sent there.
 							</div>

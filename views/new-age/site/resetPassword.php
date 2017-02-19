@@ -29,7 +29,7 @@ $this->title = 'Reset password';
 				<hr>
 			</div>
 			<div class="col-lg-6 col-lg-offset-3">
-				<div class="panel text-primary">
+				<div class="panel text-primary text-left">
 					<div class="panel-heading">
 						Please choose your new password:
 					</div>

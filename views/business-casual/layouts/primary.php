@@ -22,27 +22,27 @@ use common\widgets\Alert;
 	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
-<?= Alert::widget() ?>
+	<?php $this->beginBody() ?>
+	<?= Alert::widget() ?>
 
-<?= $this->render('_header.php') ?>
+	<?= $this->render('_header.php') ?>
 
-<?= $this->render('_navigation.php') ?>
+	<?= $this->render('_navigation.php') ?>
 
-<?= $content ?>
+	<?= $content ?>
 
-<?= $this->render('_footer.php') ?>
+	<?= $this->render('_footer.php') ?>
 
-<?php $this->endBody() ?>
+	<?php $this->endBody() ?>
 
-<!-- Script to Activate the Carousel -->
-<script>
-$(document).ready(function(){
-	$('.carousel').carousel({
-		interval: 5000 //changes the speed
-	})
-});
-</script>
+	<!-- Script to Activate the Carousel -->
+	<script>
+		$(document).ready(function(){
+			$('.carousel').carousel({
+				interval: 5000 //changes the speed
+			})
+		});
+	</script>
 </body>
 </html>
 <?php $this->endPage() ?>

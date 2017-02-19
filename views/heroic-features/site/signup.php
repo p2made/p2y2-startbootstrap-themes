@@ -21,7 +21,7 @@ $this->title = 'Signup';
 <div class="container">
 	<div class="col-lg-6 col-lg-offset-3">
 		<h3><?= Html::encode($this->title) ?></h3>
-		<div class="panel text-primary">
+		<div class="panel text-primary text-left">
 			<div class="panel-body">
 				<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 

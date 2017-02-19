@@ -22,14 +22,14 @@ use common\widgets\Alert;
 	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
-<?= Alert::widget() ?>
+	<?php $this->beginBody() ?>
+	<?= Alert::widget() ?>
 
-<?= $this->render('_navigation.php') ?>
+	<?= $this->render('_navigation.php') ?>
 
-<?= $content ?>
+	<?= $content ?>
 
-<?php $this->endBody() ?>
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

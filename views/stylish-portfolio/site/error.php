@@ -29,7 +29,7 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl(
 				<div class="col-md-12">
 					<h1><?= Html::encode($this->title) ?></h1>
 					<div class="jumbotron">
-						<div class="alert alert-danger">
+						<div class="alert alert-danger text-left">
 							<?= nl2br(Html::encode($message)) ?>
 						</div>
 						<h1 class="text-center danger">

@@ -19,7 +19,7 @@ use yii\bootstrap\NavBar;
 $loginItem = ['label' => 'Login', 'url' => ['/site/login']];
 $signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
 
-$menuItems = [['label' => 'Home', 'url' => ['/site/index']]];
+$menuItems = [['label' => 'Home', 'url' => Yii::$app->homeUrl]];
 if (Yii::$app->controller->action->id === 'login') {
 	$menuItems[] = $signupItem;
 } else {

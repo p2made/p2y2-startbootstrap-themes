@@ -46,7 +46,7 @@ if (Yii::$app->controller->action->id === 'error') {
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> Menu <?= FA::icon('bars') ?>
 				</button>
-				<a class="navbar-brand page-scroll" href="/">P2 Agency</a>
+				<a class="navbar-brand page-scroll" href="<?= Yii::$app->homeUrl ?>">P2 Agency</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<?php

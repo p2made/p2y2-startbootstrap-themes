@@ -24,7 +24,7 @@ $this->title = 'Login';
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<h1><?= Html::encode($this->title) ?></h1>
-					<div class="panel text-primary">
+					<div class="panel text-primary text-left">
 						<div class="panel-body">
 							<?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
 
