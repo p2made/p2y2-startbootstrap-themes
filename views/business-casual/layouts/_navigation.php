@@ -15,13 +15,6 @@ use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
 use p2made\helpers\FA;
 
-NavBar::begin([
-	'brandLabel' => 'P2 Business Casual',
-	'brandUrl' => Yii::$app->homeUrl,
-	'options' => [
-		'class' => 'navbar navbar-default',
-	],
-]);
 $menuItems = [
 	['label' => 'Home', 'url' => ['/site/index']],
 	['label' => 'About', 'url' => ['/site/about']],
@@ -40,6 +33,14 @@ if (Yii::$app->user->isGuest) {
 		'linkOptions' => ['data-method' => 'post']
 	];
 }
+
+NavBar::begin([
+	'brandLabel' => 'P2 Business Casual',
+	'brandUrl' => Yii::$app->homeUrl,
+	'options' => [
+		'class' => 'navbar navbar-default',
+	],
+]);
 echo Nav::widget([
 	'options' => ['class' => 'nav navbar-nav'],
 	'items' => $menuItems,

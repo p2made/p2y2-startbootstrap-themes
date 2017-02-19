@@ -16,6 +16,20 @@ use yii\bootstrap\NavBar;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+$loginItem = ['label' => 'Login', 'url' => ['/site/login']];
+$signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
+
+$menuItems = [['label' => 'Home', 'url' => ['/site/index']]];
+if (Yii::$app->controller->action->id === 'login') {
+	$menuItems[] = $signupItem;
+} else {
+	$menuItems[] = $loginItem;
+}
+if (Yii::$app->controller->action->id === 'error') {
+	$menuItems[] = $signupItem;
+}
+?>
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -24,40 +38,30 @@ use yii\bootstrap\NavBar;
 	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
-<?php $this->beginBody() ?>
+	<?php $this->beginBody() ?>
 
-<?= $this->render('_header.php') ?>
+	<?= $this->render('_header.php') ?>
 
-<?php
-NavBar::begin([
-	'brandLabel' => 'P2 Modern Business',
-	'brandUrl' => Yii::$app->homeUrl,
-	'options' => [
-		'class' => 'navbar navbar-default',
-	],
-]);
+	<?php
+		NavBar::begin([
+			'brandLabel' => 'P2 Modern Business',
+			'brandUrl' => Yii::$app->homeUrl,
+			'options' => [
+				'class' => 'navbar navbar-default',
+			],
+		]);
+		echo Nav::widget([
+			'options' => ['class' => 'nav navbar-nav'],
+			'items' => $menuItems,
+		]);
+		NavBar::end();
+	?>
 
-$menuItems = [
-	['label' => 'Home', 'url' => ['/site/index']],
-];
-if (Yii::$app->controller->action->id === 'signup') {
-	$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-} else {
-	$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
-}
+	<?= $content ?>
 
-echo Nav::widget([
-	'options' => ['class' => 'nav navbar-nav'],
-	'items' => $menuItems,
-]);
-NavBar::end();
-?>
+	<?= $this->render('_footer.php') ?>
 
-<?= $content ?>
-
-<?= $this->render('_footer.php') ?>
-
-<?php $this->endBody() ?>
+	<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>
