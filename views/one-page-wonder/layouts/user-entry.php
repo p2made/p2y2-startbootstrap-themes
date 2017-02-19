@@ -15,8 +15,6 @@ use yii\bootstrap\NavBar;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-p2made\SB\assets\OnePageWonderAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

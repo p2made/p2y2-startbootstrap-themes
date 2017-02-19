@@ -12,30 +12,17 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\bootstrap\Html;
-
 p2made\SB\assets\AgencyAsset::register($this);
-?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-	<meta charset="<?= Yii::$app->charset ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
-</head>
-<body id="page-top" class="index">
-<?php $this->beginBody() ?>
 
-<?= $this->render('_navigation.php') ?>
+$layout = 'primary';
+$actionId = Yii::$app->controller->action->id;
+$entryIds  = [NULL, 'login', 'signup', 'request-password-reset', 'error'];
+$foundId = array_search($actionId, $entryIds);
 
-<?= $content ?>
+if (false !== $foundId) {
+	$layout = 'user-entry';
+}
 
-<?= $this->render('_footer.php') ?>
-
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+echo $this->render(
+	$layout, ['content' => $content]
+);

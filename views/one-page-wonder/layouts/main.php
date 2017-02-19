@@ -12,6 +12,8 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+p2made\SB\assets\OnePageWonderAsset::register($this);
+
 $layout = 'primary';
 $actionId = Yii::$app->controller->action->id;
 $entryIds  = [NULL, 'login', 'signup', 'request-password-reset', 'error'];

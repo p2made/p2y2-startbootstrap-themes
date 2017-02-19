@@ -24,3 +24,4 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl(
 <?= $this->render('_team.php', ['assetDir' => $assetDir]) ?>
 <?= $this->render('_clients.php', ['assetDir' => $assetDir]) ?>
 <?= $this->render('_contact.php') ?>
+<?= $this->render('_footer.php') ?>

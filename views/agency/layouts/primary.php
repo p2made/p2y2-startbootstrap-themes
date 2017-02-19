@@ -18,7 +18,7 @@ use yii\bootstrap\Html;
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('_header.php', []) ?>
+	<?= $this->render('_head.php', []) ?>
 </head>
 <body>
 	<?php $this->beginBody() ?>

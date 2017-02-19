@@ -8,6 +8,9 @@
  * @package yii2-startbootstrap-themes
  * @license MIT
  */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
 ?>
 <!-- Contact Section -->
 <section id="contact">
