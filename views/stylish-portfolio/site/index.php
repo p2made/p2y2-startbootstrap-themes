@@ -12,7 +12,6 @@
 /* @var $this yii\web\View */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
 
 $this->title = 'Home';
 $assetDir = Yii::$app->assetManager->getPublishedUrl(

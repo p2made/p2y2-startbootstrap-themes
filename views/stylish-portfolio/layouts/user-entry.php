@@ -11,15 +11,18 @@
 
 use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
+use p2made\helpers\FA;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 $loginItem = ['label' => 'Login', 'url' => ['/site/login']];
 $signupItem = ['label' => 'Signup', 'url' => ['/site/signup']];
-
-$menuItems = [];
+$menuItems = [
+	'<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">' . FA::i('times') . '</a>',
+	'<li class="sidebar-brand"><a href="' . Yii::$app->homeUrl . '">Stylish Portfolio</a></li>',
+	'<li><a href="' . Yii::$app->homeUrl . '">Home</a></li>',
+];
 if (Yii::$app->controller->action->id === 'login') {
 	$menuItems[] = $signupItem;
 } else {
@@ -41,17 +44,12 @@ if (Yii::$app->controller->action->id === 'error') {
 	<!-- Navigation -->
 	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 	<nav id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-			<li class="sidebar-brand">
-				<a href="#top" onclick=$("#menu-close").click();>P2 Stylish Portfolio</a>
-			</li>
-			<li><a href="#top" onclick=$("#menu-close").click();>Home</a></li>
-			<li><a href="#about" onclick=$("#menu-close").click();>About</a></li>
-			<li><a href="#services" onclick=$("#menu-close").click();>Services</a></li>
-			<li><a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a></li>
-			<li><a href="#contact" onclick=$("#menu-close").click();>Contact</a></li>
-		</ul>
+		<?php
+			echo Nav::widget([
+				'options' => ['class' => 'sidebar-nav'],
+				'items' => $menuItems,
+			]);
+		?>
 	</nav>
 
 	<?= $content ?>
