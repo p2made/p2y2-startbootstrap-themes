@@ -56,6 +56,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/new-age',
 					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/one-page-wonder',
+					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/stylish-portfolio',
 				],
 			],
 		],
