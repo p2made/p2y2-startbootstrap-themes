@@ -22,12 +22,14 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl(
 	'@vendor/p2made/yii2-startbootstrap-themes/assets/lib/business-casual'
 );
 ?>
-<header class="intro">
-	<div class="intro-body">
+<header id="top" class="header">
+	<div class="text-vertical-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h1><?= Html::encode($this->title) ?></h1>
+				<div class="col-lg-12">
+					<h3>
+						<?= Html::encode($this->title) ?>
+					</h3>
 					<div class="jumbotron">
 						<div class="alert alert-danger text-left">
 							<?= nl2br(Html::encode($message)) ?>
