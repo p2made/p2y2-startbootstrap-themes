@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\HeroicFeaturesAsset::register($this);
+ * p2m\SB\assets\HeroicFeaturesAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\HeroicFeaturesAsset',
+ *     'p2m\SB\assets\HeroicFeaturesAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class HeroicFeaturesAsset extends \p2made\assets\base\P2AssetBundle
+class HeroicFeaturesAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -32,7 +32,7 @@ class HeroicFeaturesAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

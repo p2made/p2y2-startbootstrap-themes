@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\BusinessCasualAsset::register($this);
+ * p2m\SB\assets\BusinessCasualAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\BusinessCasualAsset',
+ *     'p2m\SB\assets\BusinessCasualAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class BusinessCasualAsset extends \p2made\assets\base\P2AssetBundle
+class BusinessCasualAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -32,7 +32,7 @@ class BusinessCasualAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\SB\assets\BusinessCasualFontsAsset',
+			'p2m\SB\assets\BusinessCasualFontsAsset',
 		],
 	);
 

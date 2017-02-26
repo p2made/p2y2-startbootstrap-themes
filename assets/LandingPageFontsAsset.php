@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\LandingPageFontsAsset::register($this);
+ * p2m\SB\assets\LandingPageFontsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\LandingPageFontsAsset',
+ *     'p2m\SB\assets\LandingPageFontsAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class LandingPageFontsAsset extends \p2made\assets\base\P2AssetBundle
+class LandingPageFontsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -32,7 +32,7 @@ class LandingPageFontsAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

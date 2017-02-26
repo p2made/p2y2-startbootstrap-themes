@@ -11,7 +11,7 @@
 
 use yii\bootstrap\Nav;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $onclick = ' onclick=$("#menu-close").click();';
 $menuItems = [

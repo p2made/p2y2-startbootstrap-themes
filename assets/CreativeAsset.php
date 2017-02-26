@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\CreativeAsset::register($this);
+ * p2m\SB\assets\CreativeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\CreativeAsset',
+ *     'p2m\SB\assets\CreativeAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class CreativeAsset extends \p2made\assets\base\P2AssetBundle
+class CreativeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -34,9 +34,9 @@ class CreativeAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\JqueryEasingAsset',
-			'p2made\assets\ScrollRevealAsset',
-			'p2made\assets\MagnificPopupAsset',
+			'p2m\assets\JqueryEasingAsset',
+			'p2m\assets\ScrollRevealAsset',
+			'p2m\assets\MagnificPopupAsset',
 		],
 	);
 

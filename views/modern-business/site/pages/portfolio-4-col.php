@@ -13,7 +13,7 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $this->title = 'Four Column Portfolio';
 $this->params['breadcrumbs'][] = $this->title;

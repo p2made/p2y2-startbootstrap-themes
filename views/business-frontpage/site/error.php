@@ -10,7 +10,7 @@
  */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 /* @var $this yii\web\View */
 /* @var $name string */

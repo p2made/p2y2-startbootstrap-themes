@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\NewAgeAsset::register($this);
+ * p2m\SB\assets\NewAgeAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\NewAgeAsset',
+ *     'p2m\SB\assets\NewAgeAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class NewAgeAsset extends \p2made\assets\base\P2AssetBundle
+class NewAgeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -32,8 +32,8 @@ class NewAgeAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\JqueryEasingAsset',
-			'p2made\assets\SimpleLineIconsAsset',
+			'p2m\assets\JqueryEasingAsset',
+			'p2m\assets\SimpleLineIconsAsset',
 		],
 	);
 

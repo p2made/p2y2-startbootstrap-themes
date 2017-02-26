@@ -12,7 +12,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\SB\assets\AgencyAsset::register($this);
+p2m\SB\assets\AgencyAsset::register($this);
 
 $layout = 'primary';
 $actionId = Yii::$app->controller->action->id;

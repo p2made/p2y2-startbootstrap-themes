@@ -13,7 +13,7 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $this->title = 'FAQ';
 $this->params['breadcrumbs'][] = $this->title;

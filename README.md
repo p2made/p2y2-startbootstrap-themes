@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v0.12.0
+P2 Start Bootstrap Themes v2.12.0
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
@@ -7,6 +7,12 @@ These themes contain [AssetBundles](http://www.yiiframework.com/doc-2.0/guide-st
 
 P2 Start Bootstrap Themes declares [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things) and [`p2made/yii2-p2y2-things-demo`](https://github.com/p2made/yii2-p2y2-things-demo) as dependancies.
 
+¡¡ IMPORTANT !!
+===============
+
+Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
+`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
+
 Installation
 ------------
 
@@ -14,19 +20,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "^0.12"
+composer require --prefer-dist p2made/yii2-startbootstrap-themes "^2.12"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^0.12"
+php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^2.12"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-startbootstrap-themes": "^0.12"
+	"p2made/yii2-startbootstrap-themes": "^2.12"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.

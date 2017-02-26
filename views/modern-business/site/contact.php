@@ -17,8 +17,8 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\widgets\Breadcrumbs;
 use yii\captcha\Captcha;
-use p2made\helpers\FA;
-use p2made\helpers\BSocial;
+use p2m\helpers\FA;
+use p2m\helpers\BSocial;
 
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;

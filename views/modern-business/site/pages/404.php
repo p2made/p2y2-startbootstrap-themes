@@ -14,7 +14,7 @@
 use yii\bootstrap\Html;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $this->title = '404';
 $this->params['breadcrumbs'][] = $this->title;

@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 ?>
 <section id="contact" class="contact bg-primary">
 	<div class="container">

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 ?>
 
 <hr>

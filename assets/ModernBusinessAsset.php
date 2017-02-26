@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\ModernBusinessAsset::register($this);
+ * p2m\SB\assets\ModernBusinessAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\ModernBusinessAsset',
+ *     'p2m\SB\assets\ModernBusinessAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class ModernBusinessAsset extends \p2made\assets\base\P2AssetBundle
+class ModernBusinessAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -35,7 +35,7 @@ class ModernBusinessAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

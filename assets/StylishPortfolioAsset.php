@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\StylishPortfolioAsset::register($this);
+ * p2m\SB\assets\StylishPortfolioAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\StylishPortfolioAsset',
+ *     'p2m\SB\assets\StylishPortfolioAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class StylishPortfolioAsset extends \p2made\assets\base\P2AssetBundle
+class StylishPortfolioAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -34,7 +34,7 @@ class StylishPortfolioAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\SB\assets\StylishPortfolioFontsAsset',
+			'p2m\SB\assets\StylishPortfolioFontsAsset',
 		],
 	);
 

@@ -12,7 +12,7 @@
 use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $menuItems = [
 	['label' => '', 'url' =>'#page-top', 'options' => ['class' => 'hidden']],

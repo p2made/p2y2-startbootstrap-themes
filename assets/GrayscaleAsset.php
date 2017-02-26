@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\GrayscaleAsset::register($this);
+ * p2m\SB\assets\GrayscaleAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\GrayscaleAsset',
+ *     'p2m\SB\assets\GrayscaleAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class GrayscaleAsset extends \p2made\assets\base\P2AssetBundle
+class GrayscaleAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -32,9 +32,9 @@ class GrayscaleAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\JqueryEasingAsset',
-			'p2made\SB\assets\GrayscaleFontsAsset',
-			'p2made\SB\assets\GrayscaleMapsAsset',
+			'p2m\assets\JqueryEasingAsset',
+			'p2m\SB\assets\GrayscaleFontsAsset',
+			'p2m\SB\assets\GrayscaleMapsAsset',
 		],
 	);
 

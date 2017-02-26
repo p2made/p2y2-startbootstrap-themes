@@ -6,8 +6,8 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use p2made\helpers\FA;
-use p2made\helpers\BSocial;
+use p2m\helpers\FA;
+use p2m\helpers\BSocial;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;

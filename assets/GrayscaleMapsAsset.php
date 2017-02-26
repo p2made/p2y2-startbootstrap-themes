@@ -11,10 +11,10 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\GrayscaleMapsAsset::register($this);
+ * p2m\SB\assets\GrayscaleMapsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\GrayscaleMapsAsset',
+ *     'p2m\SB\assets\GrayscaleMapsAsset',
  */
 
 /**
@@ -33,9 +33,9 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class GrayscaleMapsAsset extends \p2made\assets\base\P2AssetBundle
+class GrayscaleMapsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -48,7 +48,7 @@ class GrayscaleMapsAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

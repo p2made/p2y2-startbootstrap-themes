@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\SB\assets\NewAgeFontsAsset::register($this);
+ * p2m\SB\assets\NewAgeFontsAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\SB\assets\NewAgeFontsAsset',
+ *     'p2m\SB\assets\NewAgeFontsAsset',
  */
 
-namespace p2made\SB\assets;
+namespace p2m\SB\assets;
 
-class NewAgeFontsAsset extends \p2made\assets\base\P2AssetBundle
+class NewAgeFontsAsset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -34,7 +34,7 @@ class NewAgeFontsAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 	);
 

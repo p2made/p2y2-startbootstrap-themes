@@ -12,7 +12,7 @@
 use yii\bootstrap\Html;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 /* @var $this yii\web\View */
 /* @var $name string */

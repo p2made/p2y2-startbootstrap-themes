@@ -12,7 +12,7 @@
 /* @var $this yii\web\View */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $this->title = 'Home';
 ?>

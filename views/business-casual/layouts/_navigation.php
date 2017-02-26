@@ -13,7 +13,7 @@ use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\ArrayHelper;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 $menuItems = [
 	['label' => 'Home', 'url' => ['/site/index']],

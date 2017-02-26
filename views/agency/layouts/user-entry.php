@@ -12,7 +12,7 @@
 use yii\bootstrap\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
