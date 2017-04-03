@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v2.13.0
+P2 Start Bootstrap Themes v2.14.0
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.

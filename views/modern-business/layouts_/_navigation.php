@@ -21,7 +21,6 @@ NavBar::begin([
 	'options' => [
 		'class' => 'navbar navbar-inverse navbar-fixed-top',
 	],
-	'innerContainerOptions' => ['class' => 'container-fluid'],
 ]);
 $menuItems = [
 	['label' => 'About', 'url' => ['/site/about']],
