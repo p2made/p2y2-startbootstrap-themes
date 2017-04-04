@@ -21,14 +21,14 @@
 		}
 	],
 
-	"version": "2.14.0",
+	"version": "2.14.1",
 	"minimum-stability": "dev",
 
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "^2.0",
-		"p2made/yii2-p2y2-things": "^2.2",
-		"p2made/yii2-p2y2-things-demo": "^2.2"
+		"p2made/yii2-p2y2-things": "^2.3",
+		"p2made/yii2-p2y2-things-demo": "^2.3"
 	},
 	"autoload": {
 		"psr-4": {
