@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v2.14.2
+P2 Start Bootstrap Themes v2.15.0
 =========================
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
@@ -20,19 +20,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "^2.13"
+composer require --prefer-dist p2made/yii2-startbootstrap-themes "^2.15"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^2.13"
+php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^2.15"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-startbootstrap-themes": "^2.13"
+	"p2made/yii2-startbootstrap-themes": "^2.15"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.
