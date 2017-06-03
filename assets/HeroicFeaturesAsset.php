@@ -2,8 +2,8 @@
 /**
  * HeroicFeaturesAsset.php
  *
- * @copyright Copyright &copy; Pedro Plowman, 2017
  * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
  * @link https://github.com/p2made
  * @package p2made/yii2-startbootstrap-themes
  * @license MIT
