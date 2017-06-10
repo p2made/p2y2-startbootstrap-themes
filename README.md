@@ -6,7 +6,6 @@ P2 Start Bootstrap Themes v2.16.1
 [![Monthly Downloads](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Dependency Status](https://www.versioneye.com/user/projects/593beea20fb24f004afcbd3f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/593beea20fb24f004afcbd3f)
 
 ---
 
