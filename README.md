@@ -1,5 +1,14 @@
-P2 Start Bootstrap Themes v2.16.0
+P2 Start Bootstrap Themes v2.16.1
 =========================
+
+[![License](https://poser.pugx.org/p2made/yii2-sb-admin-theme/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Total Downloads](https://poser.pugx.org/p2made/yii2-sb-admin-theme/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Monthly Downloads](https://poser.pugx.org/p2made/yii2-sb-admin-theme/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
+[![Latest Stable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Dependency Status](https://www.versioneye.com/user/projects/593beea20fb24f004afcbd3f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/593beea20fb24f004afcbd3f)
+
+---
 
 Themes from [Start Bootstrap](https://startbootstrap.com) as a UIs for [Yii 2](http://www.yiiframework.com/) Framework.
 
