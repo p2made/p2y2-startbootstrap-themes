@@ -57,7 +57,9 @@ if (Yii::$app->controller->action->id === 'error') {
 		NavBar::end();
 	?>
 
-	<?= $content ?>
+	<div class="container">
+		<?= $content ?>
+	</div>
 
 	<?= $this->render('_footer.php') ?>
 

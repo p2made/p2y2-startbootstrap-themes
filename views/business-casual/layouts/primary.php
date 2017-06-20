@@ -29,7 +29,9 @@ use common\widgets\Alert;
 
 	<?= $this->render('_navigation.php') ?>
 
-	<?= $content ?>
+	<div class="container">
+		<?= $content ?>
+	</div>
 
 	<?= $this->render('_footer.php') ?>
 

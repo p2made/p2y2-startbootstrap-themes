@@ -23,31 +23,29 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl(
 );
 ?>
 
-<div class="container">
+	<!-- Every page had one or more boxes each enclosed in a row -->
+	<!-- This page has one box -->
 
-	<div class="row">
-		<div class="box">
-			<div class="col-lg-12">
-				<hr>
-				<h2 class="intro-text text-center"><?= Html::encode($this->title) ?>
-					<strong>business casual</strong>
-				</h2>
-				<hr>
-			</div>
-			<div class="col-lg-12">
-				<div class="jumbotron">
-					<div class="alert alert-danger text-left">
-						<?= nl2br(Html::encode($message)) ?>
-					</div>
-					<h1 class="text-center danger">
-						<?= FA::i('ban')->size(FA::SIZE_5X) ?><br>
-						Nothing to See Here
-					</h1>
-				</div>
-			</div>
-			<div class="clearfix"></div>
+<div class="row">
+	<div class="box">
+		<div class="col-lg-12">
+			<hr>
+			<h2 class="intro-text text-center"><?= Html::encode($this->title) ?>
+				<strong>business casual</strong>
+			</h2>
+			<hr>
 		</div>
+		<div class="col-lg-12">
+			<div class="jumbotron">
+				<div class="alert alert-danger text-left">
+					<?= nl2br(Html::encode($message)) ?>
+				</div>
+				<h1 class="text-center danger">
+					<?= FA::i('ban')->size(FA::SIZE_5X) ?><br>
+					Nothing to See Here
+				</h1>
+			</div>
+		</div>
+		<div class="clearfix"></div>
 	</div>
-
 </div>
-<!-- /.container -->
