@@ -21,7 +21,7 @@ namespace p2m\SB\assets;
 
 class LandingPageAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 
 		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-startbootstrap-themes/assets/lib/landing-page',

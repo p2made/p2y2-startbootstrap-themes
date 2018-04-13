@@ -37,7 +37,7 @@ namespace p2m\SB\assets;
 
 class GrayscaleMapsAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 
 		'static' => [
 			'baseUrl' => '//maps.googleapis.com/maps',

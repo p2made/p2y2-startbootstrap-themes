@@ -21,7 +21,7 @@ namespace p2m\SB\assets;
 
 class LandingPageFontsAsset extends \p2m\assets\base\P2AssetBundle
 {
-	private $resourceData = array(
+	protected $resourceData = array(
 
 		'static' => [
 			'baseUrl' => '//fonts.googleapis.com',
