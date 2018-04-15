@@ -21,9 +21,8 @@
 		}
 	],
 
-	"version": "2.17.0",
+	"version": "2.16.3-beta",
 	"minimum-stability": "dev",
-	"prefer-stable" : true,
 
 	"require": {
 		"php": ">=5.4.0",

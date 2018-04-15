@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v2.17.0
+P2 Start Bootstrap Themes v2.16.3-beta
 =========================
 
 [![License](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
@@ -28,19 +28,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "^2.17"
+composer require --prefer-dist p2made/yii2-startbootstrap-themes "^2.16"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^2.17"
+php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "^2.16"
 ```
 
 Alternatively add:
 
 ```
-    "p2made/yii2-startbootstrap-themes": "^2.17"
+	"p2made/yii2-startbootstrap-themes": "^2.16"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.
