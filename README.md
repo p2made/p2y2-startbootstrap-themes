@@ -1,4 +1,4 @@
-P2 Start Bootstrap Themes v2.16.2
+P2 Start Bootstrap Themes v2.16.3-beta
 =========================
 
 [![License](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
