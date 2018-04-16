@@ -21,7 +21,7 @@
 		}
 	],
 
-	"version": "2.16.3-beta",
+	"version": "2.16.2",
 	"minimum-stability": "dev",
 
 	"require": {
