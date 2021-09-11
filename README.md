@@ -1,11 +1,10 @@
-P2 Start Bootstrap Themes v4.0.0-alpha
-=========================
+# P2 Start Bootstrap Themes 5.0.0
 
-[![License](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Total Downloads](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Monthly Downloads](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
-[![Latest Stable Version](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-startbootstrap-themes/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![License](https://poser.pugx.org/p2made/p2y2-startbootstrap-themes/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Total Downloads](https://poser.pugx.org/p2made/p2y2-startbootstrap-themes/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Monthly Downloads](https://poser.pugx.org/p2made/p2y2-startbootstrap-themes/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
+[![Latest Stable Version](https://poser.pugx.org/p2made/p2y2-startbootstrap-themes/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Latest Unstable Version](https://poser.pugx.org/p2made/p2y2-startbootstrap-themes/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 
 ---
 
@@ -28,19 +27,19 @@ The preferred way to install P2 Start Bootstrap Themes is through [composer](htt
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-startbootstrap-themes "~4.0"
+composer require --prefer-dist p2made/p2y2-startbootstrap-themes "^5.0"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-startbootstrap-themes "~4.0"
+php composer.phar require --prefer-dist p2made/p2y2-startbootstrap-themes "^5.0"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-startbootstrap-themes": "~4.0"
+		"p2made/p2y2-startbootstrap-themes": "^5.0"
 ```
 
 to the requires section of your `composer.json` file & P2 Start Bootstrap Themes will be installed next time you run `composer update`.
@@ -57,18 +56,18 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/agency',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-casual',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/business-frontpage',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/creative',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/freelancer',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/grayscale',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/heroic-features',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/landing-page',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/modern-business',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/new-age',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/one-page-wonder',
-					'@app/views' => '@vendor/p2made/yii2-startbootstrap-themes/views/stylish-portfolio',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/agency',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/business-casual',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/business-frontpage',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/creative',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/freelancer',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/grayscale',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/heroic-features',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/landing-page',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/modern-business',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/new-age',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/one-page-wonder',
+					'@app/views' => '@vendor/p2made/p2y2-startbootstrap-themes/views/stylish-portfolio',
 				],
 			],
 		],
@@ -123,7 +122,7 @@ P2 Start Bootstrap Themes uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-
 Customization
 -------------
 
-- Copy files from `vendor/p2made/yii2-startbootstrap-themes/views-preview/_your_choice_of_theme_` to `@app/views`.
+- Copy files from `vendor/p2made/p2y2-startbootstrap-themes/views-preview/_your_choice_of_theme_` to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to the example views.
 
